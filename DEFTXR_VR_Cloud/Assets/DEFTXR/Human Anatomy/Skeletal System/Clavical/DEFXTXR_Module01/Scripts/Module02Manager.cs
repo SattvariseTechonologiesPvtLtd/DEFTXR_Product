@@ -499,6 +499,11 @@ public class Module02Manager : MonoBehaviour
 
         //ZoneB and Zone C activated
 
+        UIManager.Instance.zoneBplat.SetActive(true);
+        UIManager.Instance.zoneCplat.SetActive(true);
+        UIManager.Instance.zoneAPlat.SetActive(false);
+
+
         ZoneA.SetActive(false);
         ZoneB.SetActive(true);
         zoneBObj.SetActive(true);

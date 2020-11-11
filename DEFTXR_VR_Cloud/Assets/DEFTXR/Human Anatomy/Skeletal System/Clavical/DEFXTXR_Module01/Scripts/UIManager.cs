@@ -87,6 +87,7 @@ public class UIManager : MonoBehaviour
         lowerLimbMenu.SetActive(false);
         thoraxMenu.SetActive(false);
         headneckbrainMenu.SetActive(true);
+
     }
 
     public void onClavicleButtonClick()
@@ -98,8 +99,8 @@ public class UIManager : MonoBehaviour
         ulnaradiusBone.SetActive(false);
 
         zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
-        zoneCplat.SetActive(true);
+        //zoneBplat.SetActive(true);
+        //zoneCplat.SetActive(true);
 
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
@@ -114,9 +115,9 @@ public class UIManager : MonoBehaviour
         ulnaradiusBone.SetActive(false);
 
 
-        zoneAPlat.SetActive(true);
+        //zoneAPlat.SetActive(true);
         zoneBplat.SetActive(true);
-        zoneCplat.SetActive(true);
+       // zoneCplat.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
     }
@@ -129,7 +130,9 @@ public class UIManager : MonoBehaviour
         humerusBone.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
-
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
 
 
     }
@@ -141,9 +144,9 @@ public class UIManager : MonoBehaviour
         ulnaradiusBone.SetActive(false);
         humerusBone.SetActive(false);
 
-        zoneAPlat.SetActive(true);
+      //  zoneAPlat.SetActive(true);
         zoneBplat.SetActive(true);
-        zoneCplat.SetActive(true);
+     //   zoneCplat.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
 
@@ -158,6 +161,9 @@ public class UIManager : MonoBehaviour
         humerusBone.SetActive(false);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
     }
     public void onCMPButtonClick()
     {
@@ -166,6 +172,7 @@ public class UIManager : MonoBehaviour
         femurBone.SetActive(false);
 
         ComingSoonPanel.SetActive(true);
+
     }
 
     public void onOkayButtonClick()
