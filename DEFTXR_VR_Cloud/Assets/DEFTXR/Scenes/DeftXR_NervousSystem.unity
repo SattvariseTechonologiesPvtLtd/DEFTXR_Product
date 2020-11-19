@@ -7844,7 +7844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 1364164551}
-  tootipUI: {fileID: 0}
+  tootipUI: {fileID: 1364164547}
 --- !u!135 &191507034
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17656,7 +17656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 973231226}
-  tootipUI: {fileID: 0}
+  tootipUI: {fileID: 973231222}
 --- !u!135 &401519871
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30523,7 +30523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 100502046}
-  tootipUI: {fileID: 0}
+  tootipUI: {fileID: 100502042}
 --- !u!135 &631743347
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38102,7 +38102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 1533609019}
-  tootipUI: {fileID: 0}
+  tootipUI: {fileID: 1533609015}
 --- !u!135 &804044667
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47380,7 +47380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 1707396535}
-  tootipUI: {fileID: 0}
+  tootipUI: {fileID: 1707396531}
 --- !u!135 &1023079954
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62803,7 +62803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 643863229}
-  tootipUI: {fileID: 0}
+  tootipUI: {fileID: 643863225}
 --- !u!135 &1491599942
 SphereCollider:
   m_ObjectHideFlags: 0
