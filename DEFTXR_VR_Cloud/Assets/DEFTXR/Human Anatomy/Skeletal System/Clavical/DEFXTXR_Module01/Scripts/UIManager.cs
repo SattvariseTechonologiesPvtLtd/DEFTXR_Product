@@ -313,9 +313,14 @@ public class UIManager : MonoBehaviour
     {
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(false);
-        femurBone.SetActive(false);
         humerusBone.SetActive(false);
         ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
 
         mainUI.SetActive(true);
     }
