@@ -4,13 +4,10 @@ using UnityEngine.UI;
 
 public class HipBone_GameManager : MonoBehaviour
 {
-    // public GameObject ZoneA, ZoneB, ZoneC;
     public GameObject zoneBObj;
-    public GameObject HipBoneinsertionObj, HipBoneoriginObj, HipBoneclavDefaultObj, HipBoneligamentObj;
-    //public GameObject pecuBtn, sidedeterBtn, featureBtn, clinAnaBtn, ossiBtn;
-    public GameObject HipBoneligamentBtn, HipBoneinsertioBtn, HipBoneoriginBtn;
-    public Sprite selected, Dselected;
-    public bool attch, HipBoneinserAttch, HipBoneligamentAttach, HipBoneorigAttach = false;
+    public GameObject HipBoneinsertionObj, HipBoneoriginObj, HipBoneDefaultObj, HipBoneligamentObj;
+
+    public bool attch, inserAttch, ligamentAttach, origAttach = false;
 
     // Use this for initialization
     void Start()
@@ -21,95 +18,78 @@ public class HipBone_GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ClickandSelect();
+
     }
 
-    void ClickandSelect()
+    public void onInsertionButtonClick()
     {
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+        if (inserAttch == false)
+        {
+
+            HipBoneinsertionObj.SetActive(true);
+            HipBoneoriginObj.SetActive(false);
+            HipBoneDefaultObj.SetActive(false);
+            HipBoneligamentObj.SetActive(false);
+
+
+
+            inserAttch = true;
+        }
+        else
+        {
+
+            HipBoneinsertionObj.SetActive(false);
+            HipBoneoriginObj.SetActive(false);
+            HipBoneDefaultObj.SetActive(true);
+            HipBoneligamentObj.SetActive(false);
+
+            inserAttch = false;
+        }
+    }
+
+    public void onOriginButtonClick()
+    {
+        if (origAttach == false)
+        {
+
+            HipBoneinsertionObj.SetActive(false);
+            HipBoneoriginObj.SetActive(true);
+            HipBoneDefaultObj.SetActive(false);
+            HipBoneligamentObj.SetActive(false);
+            origAttach = true;
+        }
+        else
         {
 
 
-
-            if (string.Compare(UIManager.Instance.selectedBtnName, "Insertion") == 0)
-            {
-                if (HipBoneinserAttch == false)
-                {
-                    HipBoneinsertioBtn.GetComponent<Image>().sprite = selected;
-                    HipBoneinsertionObj.SetActive(true);
-                    HipBoneoriginObj.SetActive(false);
-                    HipBoneclavDefaultObj.SetActive(false);
-                    HipBoneligamentObj.SetActive(false);
-
-
-
-                    HipBoneinserAttch = true;
-                }
-                else
-                {
-                    HipBoneinsertioBtn.GetComponent<Image>().sprite = Dselected;
-                    HipBoneinsertionObj.SetActive(false);
-                    HipBoneoriginObj.SetActive(false);
-                    HipBoneclavDefaultObj.SetActive(true);
-                    HipBoneligamentObj.SetActive(false);
-
-                    HipBoneinserAttch = false;
-                }
-            }
-
-            if (string.Compare(UIManager.Instance.selectedBtnName, "Origin") == 0)
-            {
-                if (HipBoneorigAttach == false)
-                {
-                    HipBoneoriginBtn.GetComponent<Image>().sprite = selected;
-                    HipBoneinsertionObj.SetActive(false);
-                    HipBoneoriginObj.SetActive(true);
-                    HipBoneclavDefaultObj.SetActive(false);
-                    HipBoneligamentObj.SetActive(false);
-                    HipBoneorigAttach = true;
-                }
-                else
-                {
-
-                    HipBoneoriginBtn.GetComponent<Image>().sprite = Dselected;
-                    HipBoneinsertionObj.SetActive(false);
-                    HipBoneoriginObj.SetActive(false);
-                    HipBoneclavDefaultObj.SetActive(true);
-                    HipBoneligamentObj.SetActive(false);
-                    HipBoneorigAttach = false;
-                }
-            }
-
-            if (string.Compare(UIManager.Instance.selectedBtnName, "Ligaments") == 0)
-            {
-
-                if (HipBoneligamentAttach == false)
-                {
-                    HipBoneligamentBtn.GetComponent<Image>().sprite = selected;
-                    HipBoneinsertionObj.SetActive(false);
-                    HipBoneoriginObj.SetActive(false);
-                    HipBoneclavDefaultObj.SetActive(false);
-                    HipBoneligamentObj.SetActive(true);
-                    HipBoneligamentAttach = true;
-                }
-                else
-                {
-
-                    HipBoneligamentBtn.GetComponent<Image>().sprite = Dselected;
-                    HipBoneinsertionObj.SetActive(false);
-                    HipBoneoriginObj.SetActive(false);
-                    HipBoneclavDefaultObj.SetActive(true);
-                    HipBoneligamentObj.SetActive(false);
-                    HipBoneligamentAttach = false;
-                }
-
-            }
-
-
-
-
+            HipBoneinsertionObj.SetActive(false);
+            HipBoneoriginObj.SetActive(false);
+            HipBoneDefaultObj.SetActive(true);
+            HipBoneligamentObj.SetActive(false);
+            origAttach = false;
         }
+    }
+
+    public void onLigamentsButtonClick()
+    {
+        if (ligamentAttach == false)
+        {
+
+            HipBoneinsertionObj.SetActive(false);
+            HipBoneoriginObj.SetActive(false);
+            HipBoneDefaultObj.SetActive(false);
+            HipBoneligamentObj.SetActive(true);
+            ligamentAttach = true;
+        }
+        else
+        {
 
 
+            HipBoneinsertionObj.SetActive(false);
+            HipBoneoriginObj.SetActive(false);
+            HipBoneDefaultObj.SetActive(true);
+            HipBoneligamentObj.SetActive(false);
+            ligamentAttach = false;
+        }
     }
 }
