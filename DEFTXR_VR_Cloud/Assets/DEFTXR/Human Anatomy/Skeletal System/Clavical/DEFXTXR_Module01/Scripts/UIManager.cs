@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject zoneAPlat, zoneBplat, zoneCplat;
     public static UIManager Instance;
 
-    public GameObject clavicaleBone,scapulaBone,humerusBone,ulnaradiusBone,femurBone;
+    public GameObject clavicaleBone,scapulaBone,humerusBone,ulnaradiusBone,femurBone,tibiaBone,carpalBone,patellaBone,hipBone;
     
     // Sub-Menu reference to on off on click of buttn
     public GameObject upperLimbMenu, lowerLimbMenu, thoraxMenu, headneckbrainMenu,ComingSoonPanel;
@@ -35,10 +35,21 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+
+        //Upper limb bones
+
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(false);
-      //  humerusBone.SetActive(false);
+        humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
         femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
         mainUI.SetActive(true);
 
     }
@@ -87,19 +98,29 @@ public class UIManager : MonoBehaviour
         lowerLimbMenu.SetActive(false);
         thoraxMenu.SetActive(false);
         headneckbrainMenu.SetActive(true);
+
     }
 
     public void onClavicleButtonClick()
     {
+        
+        //Upper limb bones
+
         clavicaleBone.SetActive(true);
         scapulaBone.SetActive(false);
         humerusBone.SetActive(false);
-        femurBone.SetActive(false);
         ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
 
         zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
-        zoneCplat.SetActive(true);
+        //zoneBplat.SetActive(true);
+        //zoneCplat.SetActive(true);
 
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
@@ -107,43 +128,72 @@ public class UIManager : MonoBehaviour
 
     public void onScapulaButtonClick()
     {
+        //Upper limb bones
+
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(true);
         humerusBone.SetActive(false);
-        femurBone.SetActive(false);
         ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
 
 
-        zoneAPlat.SetActive(true);
+        //zoneAPlat.SetActive(true);
         zoneBplat.SetActive(true);
-        zoneCplat.SetActive(true);
+       // zoneCplat.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
     }
     public void onHumerusButtonClick()
     {
+        //Upper limb bones
+
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(false);
-        femurBone.SetActive(false);
-        ulnaradiusBone.SetActive(false);
         humerusBone.SetActive(true);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
+
+
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
-
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
 
 
     }
     public void onFemurButtonClick()
     {
+        //Upper limb bones
+
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(false);
-        femurBone.SetActive(true);
-        ulnaradiusBone.SetActive(false);
         humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
 
-        zoneAPlat.SetActive(true);
+        //LowerLimb Bones
+        femurBone.SetActive(true);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
+        //  zoneAPlat.SetActive(true);
         zoneBplat.SetActive(true);
-        zoneCplat.SetActive(true);
+     //   zoneCplat.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
 
@@ -151,14 +201,128 @@ public class UIManager : MonoBehaviour
     }
     public void onUlnaRadiusButtonClick()
     {
+        //Upper limb bones
+
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(false);
-        femurBone.SetActive(false);
-        ulnaradiusBone.SetActive(true);
         humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(true);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
+
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
     }
+
+    public void onTibiaButtonClick()
+    {
+
+        //Upper limb bones
+
+        clavicaleBone.SetActive(false);
+        scapulaBone.SetActive(false);
+        humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(true);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
+
+        mainUI.SetActive(false);
+        ComingSoonPanel.SetActive(false);
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
+    }
+
+    public void onCarpalButtonClick()
+    {
+
+        //Upper limb bones
+
+        clavicaleBone.SetActive(false);
+        scapulaBone.SetActive(false);
+        humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(true);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
+
+        mainUI.SetActive(false);
+        ComingSoonPanel.SetActive(false);
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
+    }
+
+    public void onPatellaButtonClick()
+    {
+
+        //Upper limb bones
+
+        clavicaleBone.SetActive(false);
+        scapulaBone.SetActive(false);
+        humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(true);
+        hipBone.SetActive(false);
+
+
+        mainUI.SetActive(false);
+        ComingSoonPanel.SetActive(false);
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
+    }
+
+    public void onHipBoneButtonClick()
+    {
+
+        //Upper limb bones
+
+        clavicaleBone.SetActive(false);
+        scapulaBone.SetActive(false);
+        humerusBone.SetActive(false);
+        ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(true);
+
+
+        mainUI.SetActive(false);
+        ComingSoonPanel.SetActive(false);
+        //zoneAPlat.SetActive(true);
+        zoneBplat.SetActive(true);
+        // zoneCplat.SetActive(true);
+    }
+
     public void onCMPButtonClick()
     {
         clavicaleBone.SetActive(false);
@@ -166,6 +330,7 @@ public class UIManager : MonoBehaviour
         femurBone.SetActive(false);
 
         ComingSoonPanel.SetActive(true);
+
     }
 
     public void onOkayButtonClick()
@@ -182,9 +347,16 @@ public class UIManager : MonoBehaviour
     {
         clavicaleBone.SetActive(false);
         scapulaBone.SetActive(false);
-        femurBone.SetActive(false);
         humerusBone.SetActive(false);
         ulnaradiusBone.SetActive(false);
+        carpalBone.SetActive(false);
+
+        //LowerLimb Bones
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(false);
+        patellaBone.SetActive(false);
+        hipBone.SetActive(false);
+
 
         mainUI.SetActive(true);
     }

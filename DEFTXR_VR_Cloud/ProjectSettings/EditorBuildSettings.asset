@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DEFTXR/Scenes/DeftXR_NervousSystem.unity
     guid: 390b5ffb62460b04192d61345c30cde4
+  - enabled: 1
+    path: Assets/DEFTXR/Scenes/DeftXR_Lymphatic_System.unity
+    guid: 1e3b0141485a18741b4361d10c0f6d7e
+  - enabled: 1
+    path: Assets/DEFTXR/Scenes/DeftXR_Circulatory_System.unity
+    guid: 7b65dce12f03eb446a1a384c8f5b90ff
   m_configObjects: {}
