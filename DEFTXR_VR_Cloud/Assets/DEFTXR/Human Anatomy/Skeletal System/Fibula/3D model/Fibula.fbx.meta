@@ -1,9 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 853129f6932d6d54a824f36751f4daad
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: 7ed5c829449df6c469a2c6f1d236ebb2
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fibula_M
+    second: {fileID: 2100000, guid: 0c3dfc3848f16684383401a35bfa4b66, type: 2}
+>>>>>>> e8906764cd29803ae29a5884d52f0c9f9b12fb46
   materials:
     materialImportMode: 1
     materialName: 0
