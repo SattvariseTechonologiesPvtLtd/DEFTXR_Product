@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: 371c58f40c03273459db78c612714cda
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 19300
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Rib_2_M
-    second: {fileID: 2100000, guid: 242135815204a6945a145cb4667bba40, type: 2}
+    second: {fileID: 2100000, guid: f2574192f1c08be4facea640e4bf75ad, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -48,7 +48,6 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
