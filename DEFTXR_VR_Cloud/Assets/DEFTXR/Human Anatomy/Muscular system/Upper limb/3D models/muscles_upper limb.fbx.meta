@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 6d43f40030ae76447bdabb9c51e4c4fe
 ModelImporter:
-  serializedVersion: 19300
+  serializedVersion: 19301
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AbductorDigitiMinimi_Default
+    second: {fileID: 2100000, guid: ad63b7e50a4758041a7e5db05288de4c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -12,8 +17,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: AbductorPollicisLongus_Default
+    second: {fileID: 2100000, guid: 0978ff88e0ee45c46a2956fca5ad9bb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: AbductorPollicisLongus_M
     second: {fileID: 2100000, guid: 0978ff88e0ee45c46a2956fca5ad9bb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BicepBrachiSmall_Default
+    second: {fileID: 2100000, guid: 7cc242b745278ae45a26dbcd1bf78382, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -22,8 +37,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BicepBrachi_Default
+    second: {fileID: 2100000, guid: 6622ca942d3b71344a10520cb85d9236, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: BicepBrachi_M
     second: {fileID: 2100000, guid: 6622ca942d3b71344a10520cb85d9236, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brachioradialis_Default
+    second: {fileID: 2100000, guid: 239d9b26028b3de4f9ec1a58be98219c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -32,8 +57,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Coracobrachialis_Default
+    second: {fileID: 2100000, guid: 7e4ce88d9be60bb4da3755989af9bb18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Coracobrachialis_M
     second: {fileID: 2100000, guid: 7e4ce88d9be60bb4da3755989af9bb18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Deltoid_Default
+    second: {fileID: 2100000, guid: 41aa6a36cb818884cba83ad15f26c95e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -42,8 +77,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ExtensorCarpiRadialisBrevis_Default
+    second: {fileID: 2100000, guid: 8e0a35c0f61751f41b19015cee3092c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ExtensorCarpiRadialisBrevis_M
     second: {fileID: 2100000, guid: 8e0a35c0f61751f41b19015cee3092c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ExtensorCarpiRadialisLongus_Default
+    second: {fileID: 2100000, guid: 56400e7d9f124524d838581e2c9a32c9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -52,8 +97,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ExtensorDigotorum_Default
+    second: {fileID: 2100000, guid: 20636310aac412449a2f499696b47e30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ExtensorDigotorum_M
     second: {fileID: 2100000, guid: 20636310aac412449a2f499696b47e30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ExtensorPollicisBrevis_Default
+    second: {fileID: 2100000, guid: d19b3a7dc8681cf499e3599ba1894c90, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -62,8 +117,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ExtensorPollicisLongus_Default
+    second: {fileID: 2100000, guid: e6d67d91ac4280f4e9b742ae7702a0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ExtensorPollicisLongus_M
     second: {fileID: 2100000, guid: e6d67d91ac4280f4e9b742ae7702a0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlexorCarpiRadialis_Default
+    second: {fileID: 2100000, guid: ed070359e1c4af44fad91d088b46f089, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -72,8 +137,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: FlexorCarpiUlnaris_Default
+    second: {fileID: 2100000, guid: 8ebbf2b6692558c44a7a2fea7818dc59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: FlexorCarpiUlnaris_M
     second: {fileID: 2100000, guid: 8ebbf2b6692558c44a7a2fea7818dc59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlexorDigitorumProfundus_Default
+    second: {fileID: 2100000, guid: 65b1fd98d4aa115408af32d2342aad93, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -82,8 +157,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: FlexorDigitorumSuperficialis_Default
+    second: {fileID: 2100000, guid: 7b038ca8fc374fe4593b4837625cd8f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: FlexorDigitorumSuperficialis_M
     second: {fileID: 2100000, guid: 7b038ca8fc374fe4593b4837625cd8f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlexorPollicisLongus_Default
+    second: {fileID: 2100000, guid: 9ace727f59efc9e4eab0bf6f81a5c20f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -92,8 +177,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Infraspinatus_Default
+    second: {fileID: 2100000, guid: 6b22f21da5b409c4ca6e61e88ef54e4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Infraspinatus_M
     second: {fileID: 2100000, guid: 6b22f21da5b409c4ca6e61e88ef54e4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PalmarisLongus_Default
+    second: {fileID: 2100000, guid: 5872365b7c021924fbcba9afac5fa81a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -102,8 +197,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Pectoralis_Default
+    second: {fileID: 2100000, guid: e436ab17a6764234298305f0a54f32bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Pectoralis_M
     second: {fileID: 2100000, guid: e436ab17a6764234298305f0a54f32bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PronatorTeres_Default
+    second: {fileID: 2100000, guid: b3a6b0b7b330a624dbc7b0493ec667eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -112,8 +217,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Subscapularis_Default
+    second: {fileID: 2100000, guid: e7715663f6695824482eecbd60021fce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Subscapularis_M
     second: {fileID: 2100000, guid: e7715663f6695824482eecbd60021fce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Supraspinatus_Default
+    second: {fileID: 2100000, guid: 5511a15d644bc944eb8cd422f5f20c7d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -122,8 +237,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: TeresMajor_Default
+    second: {fileID: 2100000, guid: 37b17be9c615ad44aa1e9dd2ea630166, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TeresMajor_M
     second: {fileID: 2100000, guid: 37b17be9c615ad44aa1e9dd2ea630166, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TeresMinor_Default
+    second: {fileID: 2100000, guid: 7084da4839885b6478f439ba16a8004a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -132,8 +257,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: TricepLarge_Default
+    second: {fileID: 2100000, guid: 8ab2266cce708aa4884273754b348d5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TricepLarge_M
     second: {fileID: 2100000, guid: 8ab2266cce708aa4884273754b348d5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TricepSmall_Default
+    second: {fileID: 2100000, guid: b360dd6aa648b4a419d1d128b1e518a9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -178,6 +313,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
