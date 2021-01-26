@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 01274628f51c06a45ba2af8619fcae43
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Calcaneus_M
+    second: {fileID: 2100000, guid: 7f372c8f3f2fdca4e969f086d2832531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Carpals_M
+    second: {fileID: 2100000, guid: 9bf64d5420ebf1c4990d080fee0dd8f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cervical_Vertebrae_M
+    second: {fileID: 2100000, guid: 1c349b1e457835f4bb9bf7321e61b6a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clavicle_M
+    second: {fileID: 2100000, guid: b01a71cdc7b1eac49b8f046b11f7350b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cuboid_M
+    second: {fileID: 2100000, guid: 466446d2330b03541b694874abbf097b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cuneiforms_M
+    second: {fileID: 2100000, guid: 95eb4103e0a5b9f439d15fc1b4cc67ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Femur_M
+    second: {fileID: 2100000, guid: 1a9d78381980c5448a7233e5e9fe0556, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fibula_M
+    second: {fileID: 2100000, guid: 2a45a1d5516886d459b77d9503418ef8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HipBone_M
+    second: {fileID: 2100000, guid: 4acd4f63ae5307e4ab0fa671cd1d2091, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Humerus_M
+    second: {fileID: 2100000, guid: b4a9fb2c9d5d8db49a83a10deca4f55a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lumbar_Vertebrae_M
+    second: {fileID: 2100000, guid: c568e656ceed6be4db9dfc5db61d6e82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metacarpals_M
+    second: {fileID: 2100000, guid: 9bf64d5420ebf1c4990d080fee0dd8f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metatarsals_M
+    second: {fileID: 2100000, guid: ff0a59dcba5faa542ab067a90c1baf54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Phalanges_M
+    second: {fileID: 2100000, guid: 0fb5a4f0d7c75b0459289a26410aedb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_10_M
+    second: {fileID: 2100000, guid: 90531d54a59f3944089033f35effd529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_11_M
+    second: {fileID: 2100000, guid: 4eefe82e9edb8f84983cfb5f3bcbd667, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_12_M
+    second: {fileID: 2100000, guid: 2b9ca929e7e94564fbb63fe1b4386e94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_1_M
+    second: {fileID: 2100000, guid: a3bf896da762d3d47a71296bf040dfb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_2_M
+    second: {fileID: 2100000, guid: f2574192f1c08be4facea640e4bf75ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_3_M
+    second: {fileID: 2100000, guid: 9eb3b3410a490254e86f090013233a88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_4_M
+    second: {fileID: 2100000, guid: 35fa1ab7e1f8806478f68e37f42a36a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_5_M
+    second: {fileID: 2100000, guid: b7eadb220f2af3e44a0d0846ff57d58d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_6_M
+    second: {fileID: 2100000, guid: 4c0a4729f863e7b42be69650148de497, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_7_M
+    second: {fileID: 2100000, guid: d1ef589a8ac6d0642bed261baf9e2fb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_8_M
+    second: {fileID: 2100000, guid: 3d4042fdd2334d248ad5754a7d586730, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rib_9_M
+    second: {fileID: 2100000, guid: 7f664effd008938429ea5bb06874a6db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sacrum_M
+    second: {fileID: 2100000, guid: a76fe219a1ff3d144a16ff0d738f191b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scapula_M
+    second: {fileID: 2100000, guid: 283b2733b566e9049895f7c513ec5024, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Frontal_bone_M
+    second: {fileID: 2100000, guid: e8f6a17f0cf95884c83b844e96efd78a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Mandible_M
+    second: {fileID: 2100000, guid: ddd4137a67c806d428724d5e9deac17e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Maxillary_M
+    second: {fileID: 2100000, guid: d5beb59c17c2c19448e755c63c0a05cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Nasal_bones_M
+    second: {fileID: 2100000, guid: 9038d20107ff51641abd1f8e45c8cd96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Occipital_bone_M
+    second: {fileID: 2100000, guid: 1082edc261f57c141943bfe64419eb46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Parietal_bone_M
+    second: {fileID: 2100000, guid: cc59f7b5a74b1d14fb0b100e43ff3fa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Sphenoid_M
+    second: {fileID: 2100000, guid: cf6ac68ff79f99a4781527c791c6f778, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Temporal_M
+    second: {fileID: 2100000, guid: 048cb5b0000491f4db01f08dbf5511ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skull_Zygomatic_bone_M
+    second: {fileID: 2100000, guid: 2080e135177adcf4daa10bc92b0156ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sternum_M
+    second: {instanceID: 0}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Talus_M
+    second: {fileID: 2100000, guid: 4be08e09da73c34418cc470a4e270fde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThoracicA_Vertebrae_M
+    second: {fileID: 2100000, guid: 149a83113710de241ac6c8b96b038a26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThoracicB_Vertebrae_M
+    second: {fileID: 2100000, guid: c7bbf4819dc6a9a44a2640d95dfc8fe2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tibia_M
+    second: {fileID: 2100000, guid: 87c8cbf4e1ca3ea47a33bae322073411, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UlnaRadius_M
+    second: {fileID: 2100000, guid: 85900b0e64a3f2e4698ad08b79bff0a0, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

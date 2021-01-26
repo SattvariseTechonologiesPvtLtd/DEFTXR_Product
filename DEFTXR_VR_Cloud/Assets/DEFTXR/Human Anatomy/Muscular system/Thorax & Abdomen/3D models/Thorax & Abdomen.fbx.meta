@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: c76440dfbd6ad2c4c94576a7f846f802
+guid: 2df5d90ff2647f4449739bb9545eb58a
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 19300
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ExternalOblique_M
-    second: {fileID: 2100000, guid: 25c67edaaf466a84ca55af568711a79c, type: 2}
+    second: {fileID: 2100000, guid: c7c97ef69f2de8f469a23c7e66eefe21, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: IntercostalLongshort_M
-    second: {fileID: 2100000, guid: 0668a9e8ea94d6b49bd4168b908c8e88, type: 2}
+    second: {fileID: 2100000, guid: 564c4b2167e511f4897f9389fb4c7173, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: IntercostalShort_M
-    second: {fileID: 2100000, guid: 2daf12781e9eed944ac0b9a18b1284b4, type: 2}
+    second: {fileID: 2100000, guid: d1e3f85bf93e8814798d6d50e167695a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: InternalOblique_M
-    second: {fileID: 2100000, guid: ac7b9f5d0d50df64ea69c6a8efbe17e9, type: 2}
+    second: {fileID: 2100000, guid: b2efeba6b9b5a1243b9a309351adce6a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Latissim_M
-    second: {fileID: 2100000, guid: fd3c0e21ffbd96d41a8d9776ae5a5df6, type: 2}
+      name: Levatores_costarumn_longi_M
+    second: {fileID: 2100000, guid: 0bb1b85c6d9d92b40845730df5d4cf4e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Rectus_Abdominis_M
-    second: {fileID: 2100000, guid: 7b4049472699c5f4a96f52ec411bf24b, type: 2}
+    second: {fileID: 2100000, guid: 5beb0addc057e31408c4a480abf0af56, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SerratusAnterior_M
-    second: {fileID: 2100000, guid: 64a5170f57792fb4aa04282c7e5d31ae, type: 2}
+    second: {fileID: 2100000, guid: 3afe852077eed654e98a6d907def87b5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Trapezius_M
-    second: {fileID: 2100000, guid: 9ae43d9240244704c9ae9be9f8d39f87, type: 2}
+    second: {fileID: 2100000, guid: a481f7aedcae82148b24bcdcd263a8ad, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -83,7 +83,6 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
