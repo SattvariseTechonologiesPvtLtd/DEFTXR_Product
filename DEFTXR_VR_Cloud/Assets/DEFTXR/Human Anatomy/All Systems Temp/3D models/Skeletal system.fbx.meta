@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Carpals_M
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: f1a98424249ed194a87f6f2cb624b1dd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -54,6 +54,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: HipBone_M
     second: {fileID: 2100000, guid: 4acd4f63ae5307e4ab0fa671cd1d2091, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Humerus_M
+    second: {fileID: 2100000, guid: b4a9fb2c9d5d8db49a83a10deca4f55a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
