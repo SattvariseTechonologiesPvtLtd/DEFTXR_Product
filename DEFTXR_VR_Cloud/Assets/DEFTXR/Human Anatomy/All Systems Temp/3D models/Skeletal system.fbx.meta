@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Carpals_M
-    second: {fileID: 2100000, guid: 9bf64d5420ebf1c4990d080fee0dd8f4, type: 2}
+    second: {instanceID: 0}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -24,6 +24,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Clavicle_M
     second: {fileID: 2100000, guid: b01a71cdc7b1eac49b8f046b11f7350b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CostalCart_M
+    second: {fileID: 2100000, guid: 9a80f42e969f6bb458096199038fc9df, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -52,11 +57,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Humerus_M
-    second: {fileID: 2100000, guid: b4a9fb2c9d5d8db49a83a10deca4f55a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Lumbar_Vertebrae_M
     second: {fileID: 2100000, guid: c568e656ceed6be4db9dfc5db61d6e82, type: 2}
   - first:
@@ -69,6 +69,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Metatarsals_M
     second: {fileID: 2100000, guid: ff0a59dcba5faa542ab067a90c1baf54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Patella_M
+    second: {fileID: 2100000, guid: 60818641588b23046b931a8940bafe91, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -193,7 +198,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sternum_M
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: 999875b913a232d40943d7075268eef9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

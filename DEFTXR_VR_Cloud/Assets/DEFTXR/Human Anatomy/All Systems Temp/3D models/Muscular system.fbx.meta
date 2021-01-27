@@ -77,7 +77,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ExtensorDigotorum_Default
+      name: ExtensorDigitorum_Default
     second: {fileID: 2100000, guid: 20636310aac412449a2f499696b47e30, type: 2}
   - first:
       type: UnityEngine:Material
@@ -107,8 +107,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FlexorCarpiUlnaris_Default
+      name: FlexorCarpiRadialis_Default
     second: {fileID: 2100000, guid: ed070359e1c4af44fad91d088b46f089, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlexorCarpiUlnaris_Default
+    second: {fileID: 2100000, guid: 8ebbf2b6692558c44a7a2fea7818dc59, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -168,8 +173,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Latissim_M
-    second: {fileID: -9088851539731358059, guid: bbef43cec9c00674abb02c9d16e81ebb,
-      type: 3}
+    second: {fileID: 2100000, guid: 1b0044c7cbd67204b9ff6fea3da6edf0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
