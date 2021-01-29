@@ -122,6 +122,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &31645848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.34383357
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4386766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9195179
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311881, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068240979912311882, guid: c9220b32bad47e647a7557a0b3217f78,
+        type: 3}
+      propertyPath: m_Name
+      value: UIFXSoundManager (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9220b32bad47e647a7557a0b3217f78, type: 3}
 --- !u!1001 &53673815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2800,7 +2869,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
