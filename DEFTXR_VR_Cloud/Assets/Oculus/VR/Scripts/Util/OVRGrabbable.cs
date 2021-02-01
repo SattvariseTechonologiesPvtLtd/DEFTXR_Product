@@ -17,6 +17,7 @@ permissions and limitations under the License.
 using System;
 using UnityEngine;
 
+
 /// <summary>
 /// An object that can be grabbed and thrown by OVRGrabber.
 /// </summary>
@@ -118,6 +119,11 @@ public class OVRGrabbable : MonoBehaviour
         m_grabbedCollider = grabPoint;
         gameObject.GetComponent<Rigidbody>().useGravity = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
+        // edited by sujit mane : 01/02/2021
+
+        
+        //gameObject.GetComponent<SnapToOrgPos>().enabled = true;
     }
 
 	/// <summary>
