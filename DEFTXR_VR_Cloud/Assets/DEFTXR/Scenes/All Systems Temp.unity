@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 13658799}
   - component: {fileID: 13658798}
   - component: {fileID: 13658802}
+  - component: {fileID: 13658803}
   m_Layer: 0
   m_Name: Lumbar_Vertivrae
   m_TagString: Untagged
@@ -213,6 +214,18 @@ MeshFilter:
   m_GameObject: {fileID: 13658796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &13658802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13658796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &13658803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -782,6 +795,7 @@ GameObject:
   - component: {fileID: 85825451}
   - component: {fileID: 85825450}
   - component: {fileID: 85825449}
+  - component: {fileID: 85825453}
   m_Layer: 0
   m_Name: Metacarpals_left
   m_TagString: Untagged
@@ -858,6 +872,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85825447}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &85825453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85825447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &90933615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,6 +1663,7 @@ GameObject:
   - component: {fileID: 216052043}
   - component: {fileID: 216052042}
   - component: {fileID: 216052046}
+  - component: {fileID: 216052047}
   m_Layer: 0
   m_Name: Cervical_Vertebrae
   m_TagString: Untagged
@@ -1714,6 +1741,18 @@ MeshFilter:
   m_GameObject: {fileID: 216052040}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &216052046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216052040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &216052047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1894,6 +1933,7 @@ GameObject:
   - component: {fileID: 243859931}
   - component: {fileID: 243859930}
   - component: {fileID: 243859934}
+  - component: {fileID: 243859935}
   m_Layer: 0
   m_Name: Humerus_left
   m_TagString: Untagged
@@ -1982,6 +2022,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &243859935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243859928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &260933641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2048,7 @@ GameObject:
   - component: {fileID: 260933644}
   - component: {fileID: 260933643}
   - component: {fileID: 260933647}
+  - component: {fileID: 260933648}
   m_Layer: 0
   m_Name: Scapula_left
   m_TagString: Untagged
@@ -2073,6 +2126,18 @@ MeshFilter:
   m_GameObject: {fileID: 260933641}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &260933647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260933641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &260933648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2498,6 +2563,7 @@ GameObject:
   - component: {fileID: 494280106}
   - component: {fileID: 494280105}
   - component: {fileID: 494280109}
+  - component: {fileID: 494280110}
   m_Layer: 0
   m_Name: HipBone_right
   m_TagString: Untagged
@@ -2586,6 +2652,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &494280110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494280103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &511479973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +2679,7 @@ GameObject:
   - component: {fileID: 511479976}
   - component: {fileID: 511479975}
   - component: {fileID: 511479980}
+  - component: {fileID: 511479981}
   m_Layer: 0
   m_Name: Foot_Right
   m_TagString: Untagged
@@ -2728,6 +2807,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &511479981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511479973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &585569093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,6 +2833,7 @@ GameObject:
   - component: {fileID: 585569096}
   - component: {fileID: 585569095}
   - component: {fileID: 585569099}
+  - component: {fileID: 585569100}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Untagged
@@ -2830,6 +2922,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &585569100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585569093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &601243492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,6 +2948,7 @@ GameObject:
   - component: {fileID: 601243495}
   - component: {fileID: 601243494}
   - component: {fileID: 601243498}
+  - component: {fileID: 601243499}
   m_Layer: 0
   m_Name: Patella_left
   m_TagString: Untagged
@@ -2932,6 +3037,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &601243499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601243492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &615059629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,6 +3063,7 @@ GameObject:
   - component: {fileID: 615059634}
   - component: {fileID: 615059632}
   - component: {fileID: 615059635}
+  - component: {fileID: 615059636}
   m_Layer: 0
   m_Name: Fibula_right
   m_TagString: Untagged
@@ -3034,6 +3152,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &615059636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615059629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &643176001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,6 +3178,7 @@ GameObject:
   - component: {fileID: 643176004}
   - component: {fileID: 643176003}
   - component: {fileID: 643176007}
+  - component: {fileID: 643176008}
   m_Layer: 0
   m_Name: Tibia_left
   m_TagString: Untagged
@@ -3125,6 +3256,18 @@ MeshFilter:
   m_GameObject: {fileID: 643176001}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &643176007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643176001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &643176008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3570,6 +3713,7 @@ GameObject:
   - component: {fileID: 868442477}
   - component: {fileID: 868442476}
   - component: {fileID: 868442475}
+  - component: {fileID: 868442479}
   m_Layer: 0
   m_Name: Carpals_right
   m_TagString: Untagged
@@ -3646,6 +3790,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868442473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &868442479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868442473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &911906591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4204,6 +4360,7 @@ GameObject:
   - component: {fileID: 916629145}
   - component: {fileID: 916629144}
   - component: {fileID: 916629143}
+  - component: {fileID: 916629147}
   m_Layer: 0
   m_Name: Radius_right
   m_TagString: Untagged
@@ -4280,6 +4437,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916629141}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &916629147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916629141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &931392396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4463,7 @@ GameObject:
   - component: {fileID: 931392399}
   - component: {fileID: 931392398}
   - component: {fileID: 931392402}
+  - component: {fileID: 931392403}
   m_Layer: 0
   m_Name: Patella_right
   m_TagString: Untagged
@@ -4382,6 +4552,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &931392403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931392396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &979328301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4396,6 +4578,7 @@ GameObject:
   - component: {fileID: 979328304}
   - component: {fileID: 979328303}
   - component: {fileID: 979328307}
+  - component: {fileID: 979328308}
   m_Layer: 0
   m_Name: Thoracic_Vertebrae
   m_TagString: Untagged
@@ -4484,6 +4667,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &979328308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979328301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980337979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,6 +4693,7 @@ GameObject:
   - component: {fileID: 980337982}
   - component: {fileID: 980337981}
   - component: {fileID: 980337985}
+  - component: {fileID: 980337986}
   m_Layer: 0
   m_Name: Clavicle_left
   m_TagString: Untagged
@@ -4586,6 +4782,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &980337986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980337979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1008046907
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,6 +4843,7 @@ GameObject:
   - component: {fileID: 1054331698}
   - component: {fileID: 1054331697}
   - component: {fileID: 1054331696}
+  - component: {fileID: 1054331700}
   m_Layer: 0
   m_Name: Ulna_right
   m_TagString: Untagged
@@ -4711,6 +4920,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054331694}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1054331700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054331694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1173962310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,6 +4945,7 @@ GameObject:
   - component: {fileID: 1173962314}
   - component: {fileID: 1173962313}
   - component: {fileID: 1173962312}
+  - component: {fileID: 1173962316}
   m_Layer: 0
   m_Name: Radius_left
   m_TagString: Untagged
@@ -4800,6 +5022,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173962310}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1173962316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173962310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1195908563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,6 +5048,7 @@ GameObject:
   - component: {fileID: 1195908568}
   - component: {fileID: 1195908567}
   - component: {fileID: 1195908569}
+  - component: {fileID: 1195908570}
   m_Layer: 0
   m_Name: Humerus_right
   m_TagString: Untagged
@@ -4891,6 +5126,18 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!114 &1195908569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195908563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1195908570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5260,6 +5507,7 @@ GameObject:
   - component: {fileID: 1264310257}
   - component: {fileID: 1264310258}
   - component: {fileID: 1264310255}
+  - component: {fileID: 1264310259}
   m_Layer: 0
   m_Name: Sacrum
   m_TagString: Untagged
@@ -5348,6 +5596,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1264310259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264310252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1283614970
 GameObject:
   m_ObjectHideFlags: 0
@@ -5362,6 +5622,7 @@ GameObject:
   - component: {fileID: 1283614973}
   - component: {fileID: 1283614972}
   - component: {fileID: 1283614976}
+  - component: {fileID: 1283614977}
   m_Layer: 0
   m_Name: Mandible
   m_TagString: Untagged
@@ -5450,6 +5711,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1283614977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283614970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1308229261
 GameObject:
   m_ObjectHideFlags: 0
@@ -5464,6 +5737,7 @@ GameObject:
   - component: {fileID: 1308229264}
   - component: {fileID: 1308229263}
   - component: {fileID: 1308229267}
+  - component: {fileID: 1308229268}
   m_Layer: 0
   m_Name: Scapula_right
   m_TagString: Untagged
@@ -5541,6 +5815,18 @@ MeshFilter:
   m_GameObject: {fileID: 1308229261}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1308229267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308229261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1308229268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5819,6 +6105,7 @@ GameObject:
   - component: {fileID: 1394370725}
   - component: {fileID: 1394370723}
   - component: {fileID: 1394370726}
+  - component: {fileID: 1394370727}
   m_Layer: 0
   m_Name: Tibia_right
   m_TagString: Untagged
@@ -5907,6 +6194,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1394370727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394370720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412735027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5951,7 +6250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletanSyetemObj: {fileID: 8296172667358195468}
-  muscularSystemObj: {fileID: 0}
+  muscularSystemObj: {fileID: 779235959570723862}
   LymphSystemObj: {fileID: 8296172668392528337}
   circulatorySystemObj: {fileID: 8296172667623677120}
   nervSystemObj: {fileID: 8296172668392528337}
@@ -5984,6 +6283,7 @@ GameObject:
   - component: {fileID: 1442208987}
   - component: {fileID: 1442208986}
   - component: {fileID: 1442208988}
+  - component: {fileID: 1442208989}
   m_Layer: 0
   m_Name: Femur_left
   m_TagString: Untagged
@@ -6072,6 +6372,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1442208989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442208982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1459575487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,6 +6398,7 @@ GameObject:
   - component: {fileID: 1459575490}
   - component: {fileID: 1459575489}
   - component: {fileID: 1459575493}
+  - component: {fileID: 1459575494}
   m_Layer: 0
   m_Name: HipBone_left
   m_TagString: Untagged
@@ -6174,6 +6487,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1459575494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459575487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1531117457
 GameObject:
   m_ObjectHideFlags: 0
@@ -6241,6 +6566,7 @@ GameObject:
   - component: {fileID: 1545304524}
   - component: {fileID: 1545304523}
   - component: {fileID: 1545304522}
+  - component: {fileID: 1545304526}
   m_Layer: 0
   m_Name: Metacarpals_right
   m_TagString: Untagged
@@ -6317,6 +6643,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545304520}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1545304526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545304520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590845133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6735,6 +7073,7 @@ GameObject:
   - component: {fileID: 1803243686}
   - component: {fileID: 1803243685}
   - component: {fileID: 1803243687}
+  - component: {fileID: 1803243688}
   m_Layer: 0
   m_Name: Femur_right
   m_TagString: Untagged
@@ -6823,6 +7162,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1803243688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803243681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1815491594
 GameObject:
   m_ObjectHideFlags: 0
@@ -6837,6 +7188,7 @@ GameObject:
   - component: {fileID: 1815491597}
   - component: {fileID: 1815491596}
   - component: {fileID: 1815491600}
+  - component: {fileID: 1815491601}
   m_Layer: 0
   m_Name: RibsUpper
   m_TagString: Untagged
@@ -6914,6 +7266,18 @@ MeshFilter:
   m_GameObject: {fileID: 1815491594}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1815491600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815491594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1815491601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7185,6 +7549,7 @@ GameObject:
   - component: {fileID: 1913829122}
   - component: {fileID: 1913829121}
   - component: {fileID: 1913829120}
+  - component: {fileID: 1913829124}
   m_Layer: 0
   m_Name: Ulna_left
   m_TagString: Untagged
@@ -7261,6 +7626,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913829118}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1913829124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913829118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932451013
 GameObject:
   m_ObjectHideFlags: 0
@@ -7274,6 +7651,7 @@ GameObject:
   - component: {fileID: 1932451017}
   - component: {fileID: 1932451016}
   - component: {fileID: 1932451015}
+  - component: {fileID: 1932451019}
   m_Layer: 0
   m_Name: Carpals_left
   m_TagString: Untagged
@@ -7350,6 +7728,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932451013}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1932451019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932451013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1954933767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7364,6 +7754,7 @@ GameObject:
   - component: {fileID: 1954933770}
   - component: {fileID: 1954933769}
   - component: {fileID: 1954933773}
+  - component: {fileID: 1954933774}
   m_Layer: 0
   m_Name: Ribs
   m_TagString: Untagged
@@ -7452,6 +7843,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1954933774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954933767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2020416470
 GameObject:
   m_ObjectHideFlags: 0
@@ -7466,6 +7869,7 @@ GameObject:
   - component: {fileID: 2020416475}
   - component: {fileID: 2020416473}
   - component: {fileID: 2020416476}
+  - component: {fileID: 2020416477}
   m_Layer: 0
   m_Name: Fibula_left
   m_TagString: Untagged
@@ -7543,6 +7947,18 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2020416476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020416470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2020416477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7660,6 +8076,7 @@ GameObject:
   - component: {fileID: 2097485516}
   - component: {fileID: 2097485515}
   - component: {fileID: 2097485519}
+  - component: {fileID: 2097485520}
   m_Layer: 0
   m_Name: Foot_Left
   m_TagString: Untagged
@@ -7737,6 +8154,18 @@ MeshFilter:
   m_GameObject: {fileID: 2097485513}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &2097485519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097485513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2097485520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7919,6 +8348,7 @@ GameObject:
   - component: {fileID: 2102016905}
   - component: {fileID: 2102016904}
   - component: {fileID: 2102016906}
+  - component: {fileID: 2102016907}
   m_Layer: 0
   m_Name: Clavicle_right
   m_TagString: Untagged
@@ -7996,6 +8426,18 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!114 &2102016906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102016900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59ad60653bcc604996acae0e721ba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2102016907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -21,7 +21,19 @@ public class FemurZoneBManager : MonoBehaviour
     public GameObject feature_dropdown;
     public GameObject featureSelectAllButtonTick;
     public GameObject subButtonsParent;
-   
+
+    public GameObject ligaments_dropdown;
+    public GameObject ligamentSelectAllButtonTick;
+    public GameObject ligamentsubButtonsParent;
+
+    public GameObject origin_dropdown;
+    public GameObject originSelectAllButtonTick;
+    public GameObject originsubButtonsParent;
+
+    public GameObject insertion_dropdown;
+    public GameObject insertionSelectAllButtonTick;
+    public GameObject insertionsubButtonsParent;
+
     // Use this for initialization
     void Start()
     {
