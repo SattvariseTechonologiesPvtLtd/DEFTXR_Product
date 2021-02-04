@@ -8,9 +8,25 @@ public class ScapulaGameManager : MonoBehaviour
    // public GameObject ZoneA, ZoneB, ZoneC;
     public GameObject zoneBObj;
 
-    public GameObject insertionObj, originObj, clavDefaultObj, ligamentObj;
+    public GameObject insertionObj, originObj, clavDefaultObj, ligamentObj, featuresObj;
 
-    public bool attch, inserAttch, ligamentAttach, origAttach = false;
+    public bool attch, inserAttch, ligamentAttach, origAttach, featureAttach = false;
+
+    public GameObject feature_dropdown;
+    public GameObject featureSelectAllButtonTick;
+    public GameObject subButtonsParent;
+
+    public GameObject ligaments_dropdown;
+    public GameObject ligamentSelectAllButtonTick;
+    public GameObject ligamentsubButtonsParent;
+
+    public GameObject origin_dropdown;
+    public GameObject originSelectAllButtonTick;
+    public GameObject originsubButtonsParent;
+
+    public GameObject insertion_dropdown;
+    public GameObject insertionSelectAllButtonTick;
+    public GameObject insertionsubButtonsParent;
 
     // Use this for initialization
     void Start()
@@ -33,8 +49,8 @@ public class ScapulaGameManager : MonoBehaviour
             originObj.SetActive(false);
             clavDefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
-
-
+            featuresObj.SetActive(false);
+            insertion_dropdown.SetActive(true);
 
             inserAttch = true;
         }
@@ -45,6 +61,8 @@ public class ScapulaGameManager : MonoBehaviour
             originObj.SetActive(false);
             clavDefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
+            featuresObj.SetActive(false);
+            insertion_dropdown.SetActive(false);
 
             inserAttch = false;
         }
@@ -59,6 +77,9 @@ public class ScapulaGameManager : MonoBehaviour
             originObj.SetActive(true);
             clavDefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
+            featuresObj.SetActive(false);
+            origin_dropdown.SetActive(true);
+
             origAttach = true;
         }
         else
@@ -69,6 +90,9 @@ public class ScapulaGameManager : MonoBehaviour
             originObj.SetActive(false);
             clavDefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
+            featuresObj.SetActive(false);
+            origin_dropdown.SetActive(false);
+
             origAttach = false;
         }
     }
@@ -82,6 +106,9 @@ public class ScapulaGameManager : MonoBehaviour
             originObj.SetActive(false);
             clavDefaultObj.SetActive(false);
             ligamentObj.SetActive(true);
+            featuresObj.SetActive(false);
+            ligaments_dropdown.SetActive(true);
+
             ligamentAttach = true;
         }
         else
@@ -92,9 +119,37 @@ public class ScapulaGameManager : MonoBehaviour
             originObj.SetActive(false);
             clavDefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
+            featuresObj.SetActive(false);
+            ligaments_dropdown.SetActive(false);
+
             ligamentAttach = false;
         }
     }
 
- 
+    public void onfeatureButtonClick()
+    {
+        if (featureAttach == false)
+        {
+
+            insertionObj.SetActive(false);
+            originObj.SetActive(false);
+            clavDefaultObj.SetActive(false);
+            ligamentObj.SetActive(true);
+            featuresObj.SetActive(true);
+            feature_dropdown.SetActive(true);
+            featureAttach = true;
+        }
+        else
+        {
+
+
+            insertionObj.SetActive(false);
+            originObj.SetActive(false);
+            clavDefaultObj.SetActive(true);
+            ligamentObj.SetActive(false);
+            featuresObj.SetActive(false);
+            feature_dropdown.SetActive(false);
+            featureAttach = false;
+        }
+    }
 }

@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/DEFTXR/Scenes/MainMenu.unity
     guid: 7a8acf5796e8dbe499ac594991d6c921
-  - enabled: 0
+  - enabled: 1
     path: Assets/DEFTXR/Scenes/DeftXR_SkeletalSystem.unity
     guid: 38cb10ba60a3d0a47be37f14d095b01e
   - enabled: 0
@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/DEFTXR/Scenes/DeftXR_Muscular_System.unity
     guid: ac48fc797a09bfe41a84aeb6001004de
-  - enabled: 1
+  - enabled: 0
     path: Assets/DEFTXR/Scenes/All Systems Temp.unity
     guid: 0457a77e5fbb7a2499c97e1323f7c9f5
   m_configObjects: {}
