@@ -73,4 +73,10 @@ public class mainUIManager: MonoBehaviour
     {
         SceneManager.LoadSceneAsync("DeftXR_Muscular_System");
     }
+    
+
+        public void onAllSystemButtonClick()
+    {
+        SceneManager.LoadSceneAsync("All_System");
+    }
 }

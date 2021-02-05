@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using TMPro;
+using UnityEngine.UI;
 
 public class FemurZoneBManager : MonoBehaviour
 {
@@ -10,24 +11,46 @@ public class FemurZoneBManager : MonoBehaviour
     public GameObject zoneBObj;
 
     public GameObject insertionObj, originObj, femurDefaultObj, ligamentObj, featuresObj;
-    //public GameObject pecuBtn, sidedeterBtn, featureBtn, clinAnaBtn, ossiBtn;
-  
+
+    public GameObject selectbtn;
 
     public bool attch, inserAttch, ligamentAttach, origAttach,featureAttach = false;
 
-    public GameObject[] featuresList;
+    public Sprite enable, disable;
 
-    public bool isAllFeaturesSelected;
+    //public GameObject[] featuresList;
+
+    //public bool isAllFeaturesSelected;
     public GameObject feature_dropdown;
     public GameObject featureSelectAllButtonTick;
     public GameObject subButtonsParent;
-   
+
+    public GameObject ligaments_dropdown;
+    public GameObject ligamentSelectAllButtonTick;
+    public GameObject ligamentsubButtonsParent;
+
+    public GameObject origin_dropdown;
+    public GameObject originSelectAllButtonTick;
+    public GameObject originsubButtonsParent;
+
+    public GameObject insertion_dropdown;
+    public GameObject insertionSelectAllButtonTick;
+    public GameObject insertionsubButtonsParent;
+
+    public GameObject insertionBtn;
+    public GameObject ligamentsBtn;
+    public GameObject originBtn;
+    public GameObject featureBtn;
+
     // Use this for initialization
     void Start()
     {
-        isAllFeaturesSelected = false;
-        
-      
+        //isAllFeaturesSelected = false;
+        insertion_dropdown.SetActive(false);
+        ligaments_dropdown.SetActive(false);
+        origin_dropdown.SetActive(false);
+        feature_dropdown.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -38,8 +61,8 @@ public class FemurZoneBManager : MonoBehaviour
 
     public void onFeaturesSubButtonClick()
     {
-        featureSelectAllButtonTick.SetActive(false);
-        isAllFeaturesSelected = false;
+       // featureSelectAllButtonTick.SetActive(false);
+        //isAllFeaturesSelected = false;
 
         //foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
         //{
@@ -55,7 +78,7 @@ public class FemurZoneBManager : MonoBehaviour
         //}
     }
 
-    public void selectAllFeatures()
+   /* public void selectAllFeatures()
     {
         if (isAllFeaturesSelected == false){
             featureSelectAllButtonTick.SetActive(true);
@@ -92,7 +115,7 @@ public class FemurZoneBManager : MonoBehaviour
 
             isAllFeaturesSelected = false;
         }
-    }
+    }*/
 
 
 
@@ -106,8 +129,7 @@ public class FemurZoneBManager : MonoBehaviour
             femurDefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
             featuresObj.SetActive(false);
-            feature_dropdown.SetActive(false);
-
+            insertion_dropdown.SetActive(true);
 
             inserAttch = true;
         }
@@ -119,7 +141,9 @@ public class FemurZoneBManager : MonoBehaviour
             femurDefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
             featuresObj.SetActive(false);
-            feature_dropdown.SetActive(false);
+            insertion_dropdown.SetActive(false);
+
+            
             inserAttch = false;
         }
     }
@@ -134,7 +158,9 @@ public class FemurZoneBManager : MonoBehaviour
             femurDefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
             featuresObj.SetActive(false);
-            feature_dropdown.SetActive(false);
+            origin_dropdown.SetActive(true);
+
+           
             origAttach = true;
         }
         else
@@ -146,7 +172,9 @@ public class FemurZoneBManager : MonoBehaviour
             femurDefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
             featuresObj.SetActive(false);
-            feature_dropdown.SetActive(false);
+            origin_dropdown.SetActive(false);
+
+
             origAttach = false;
         }
     }
@@ -161,7 +189,9 @@ public class FemurZoneBManager : MonoBehaviour
             femurDefaultObj.SetActive(false);
             ligamentObj.SetActive(true);
             featuresObj.SetActive(false);
-            feature_dropdown.SetActive(false);
+            ligaments_dropdown.SetActive(true);
+
+
             ligamentAttach = true;
         }
         else
@@ -173,7 +203,10 @@ public class FemurZoneBManager : MonoBehaviour
             femurDefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
             featuresObj.SetActive(false);
-            feature_dropdown.SetActive(false);
+            ligaments_dropdown.SetActive(false);
+
+ 
+
             ligamentAttach = false;
         }
     }
@@ -189,6 +222,7 @@ public class FemurZoneBManager : MonoBehaviour
             ligamentObj.SetActive(false);
             featuresObj.SetActive(true);
             feature_dropdown.SetActive(true);
+
             featureAttach = true;
         }
         else
@@ -201,6 +235,7 @@ public class FemurZoneBManager : MonoBehaviour
             ligamentObj.SetActive(false);
             featuresObj.SetActive(false);
            feature_dropdown.SetActive(false);
+
             featureAttach = false;
         }
     }

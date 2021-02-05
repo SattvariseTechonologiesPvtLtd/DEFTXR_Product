@@ -14,7 +14,7 @@ public class Module02Manager : MonoBehaviour
 
     
 
-    public bool attch, inserAttch, ligamentAttach, origAttach = false;
+    public bool attch, inserAttch, ligamentAttach, origAttach, featureAttach = false;
     public GameObject skeletonInfo, skeletonStatic;
     public GameObject UICan, text01, text02, text03, text04;
 
@@ -68,12 +68,26 @@ public class Module02Manager : MonoBehaviour
 
     public GameObject sideDeterParent, clavicalParts;
 
-    public GameObject muscleAttach, muscleUI, insertionLeft, originLeft, clavDefaultLeft, ligamentLeft;
+    public GameObject muscleAttach, muscleUI, insertionLeft, originLeft, clavDefaultLeft, ligamentLeft, featureLeft;
     public GameObject insertionRight, originRight, clavDefaultRight, ligamentRight;
 
     public bool isClickedStart = false;
 
+    public GameObject feature_dropdown;
+    public GameObject featureSelectAllButtonTick;
+    public GameObject subButtonsParent;
 
+    public GameObject ligaments_dropdown;
+    public GameObject ligamentSelectAllButtonTick;
+    public GameObject ligamentsubButtonsParent;
+
+    public GameObject origin_dropdown;
+    public GameObject originSelectAllButtonTick;
+    public GameObject originsubButtonsParent;
+
+    public GameObject insertion_dropdown;
+    public GameObject insertionSelectAllButtonTick;
+    public GameObject insertionsubButtonsParent;
 
     // Use this for initialization
     void Start()
@@ -290,8 +304,8 @@ public class Module02Manager : MonoBehaviour
             originLeft.SetActive(false);
             clavDefaultLeft.SetActive(false);
             ligamentLeft.SetActive(false);
+            insertion_dropdown.SetActive(true);
 
-           
 
             inserAttch = true;
         }
@@ -302,8 +316,8 @@ public class Module02Manager : MonoBehaviour
             originLeft.SetActive(false);
             clavDefaultLeft.SetActive(true);
             ligamentLeft.SetActive(false);
+            insertion_dropdown.SetActive(false);
 
-            
             inserAttch = false;
         }
     }
@@ -317,8 +331,8 @@ public class Module02Manager : MonoBehaviour
             insertionLeft.SetActive(false);
             clavDefaultLeft.SetActive(false);
             ligamentLeft.SetActive(false);
+            origin_dropdown.SetActive(true);
 
-           
             origAttach = true;
         }
         else
@@ -329,8 +343,8 @@ public class Module02Manager : MonoBehaviour
             insertionLeft.SetActive(false);
             clavDefaultLeft.SetActive(true);
             ligamentLeft.SetActive(false);
+            origin_dropdown.SetActive(false);
 
-           
             origAttach = false;
         }
     }
@@ -344,8 +358,8 @@ public class Module02Manager : MonoBehaviour
             insertionLeft.SetActive(false);
             clavDefaultLeft.SetActive(false);
             ligamentLeft.SetActive(true);
+            ligaments_dropdown.SetActive(true);
 
-          
             ligamentAttach = true;
         }
         else
@@ -355,13 +369,42 @@ public class Module02Manager : MonoBehaviour
             insertionLeft.SetActive(false);
             clavDefaultLeft.SetActive(true);
             ligamentLeft.SetActive(false);
+            ligaments_dropdown.SetActive(false);
 
-            
             ligamentAttach = false;
         }
 
     }
 
+    public void onFeatureButtonClick()
+    {
+        if (featureAttach == false)
+        {
+
+            originLeft.SetActive(false);
+            insertionLeft.SetActive(false);
+            clavDefaultLeft.SetActive(false);
+            ligamentLeft.SetActive(false);
+            featureLeft.SetActive(true);
+            feature_dropdown.SetActive(true);
+
+            featureAttach = true;
+        }
+        else
+        {
+
+            originLeft.SetActive(false);
+            insertionLeft.SetActive(false);
+            clavDefaultLeft.SetActive(true);
+            ligamentLeft.SetActive(false);
+            featureLeft.SetActive(false);
+
+            feature_dropdown.SetActive(false);
+
+            featureAttach = false;
+        }
+
+    }
 
 
 
