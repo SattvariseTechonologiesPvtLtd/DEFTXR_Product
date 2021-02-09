@@ -73,21 +73,38 @@ public class Module02Manager : MonoBehaviour
 
     public bool isClickedStart = false;
 
+    public Sprite enable, disable;
+
+    public GameObject[] featuresList;
+    public GameObject[] insertionsList;
+    public GameObject[] originsList;
+    public GameObject[] ligamentsList;
+
+    public bool isAllFeaturesSelected;
+    public bool isAllInsertionsSelected;
+    public bool isAllLigamentsSelected;
+    public bool isAllOriginsSelected;
+
     public GameObject feature_dropdown;
     public GameObject featureSelectAllButtonTick;
     public GameObject subButtonsParent;
 
     public GameObject ligaments_dropdown;
-    public GameObject ligamentSelectAllButtonTick;
-    public GameObject ligamentsubButtonsParent;
+    public GameObject ligamentsSelectAllButtonTick;
+    public GameObject ligamentsSubButtonsParent;
 
     public GameObject origin_dropdown;
-    public GameObject originSelectAllButtonTick;
-    public GameObject originsubButtonsParent;
+    public GameObject originsSelectAllButtonTick;
+    public GameObject originsSubButtonsParent;
 
     public GameObject insertion_dropdown;
     public GameObject insertionSelectAllButtonTick;
-    public GameObject insertionsubButtonsParent;
+    public GameObject insertionSubButtonsParent;
+
+    public GameObject insertionBtn;
+    public GameObject ligamentsBtn;
+    public GameObject originBtn;
+    public GameObject featureBtn;
 
     // Use this for initialization
     void Start()
@@ -100,7 +117,22 @@ public class Module02Manager : MonoBehaviour
 
         clickCount = 0;
         StartCoroutine(Startgame());
-  
+
+        isAllFeaturesSelected = false;
+        isAllInsertionsSelected = false;
+        isAllOriginsSelected = false;
+        isAllLigamentsSelected = false;
+
+        insertion_dropdown.SetActive(false);
+        ligaments_dropdown.SetActive(false);
+        origin_dropdown.SetActive(false);
+        feature_dropdown.SetActive(false);
+
+        featureBtn.GetComponent<Image>().sprite = disable;
+        insertionBtn.GetComponent<Image>().sprite = disable;
+        originBtn.GetComponent<Image>().sprite = disable;
+        ligamentsBtn.GetComponent<Image>().sprite = disable;
+
     }
 
 
@@ -213,6 +245,145 @@ public class Module02Manager : MonoBehaviour
         }
     }
 
+    public void selectAllFeatures()
+    {
+        if (isAllFeaturesSelected == false)
+        {
+            featureSelectAllButtonTick.SetActive(true);
+
+            for (int j = 0; j < featuresList.Length; j++)
+            {
+                featuresList[j].SetActive(true);
+            }
+            foreach (Transform t in subButtonsParent.transform)
+            {
+                t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+            }
+            isAllFeaturesSelected = true;
+        }
+        else
+        {
+            featureSelectAllButtonTick.SetActive(false);
+
+            for (int j = 0; j < featuresList.Length; j++)
+            {
+                featuresList[j].SetActive(false);
+            }
+
+            foreach (Transform s in subButtonsParent.transform)
+            {
+                s.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+
+            }
+
+            isAllFeaturesSelected = false;
+        }
+    }
+
+    public void selectAllInsertions()
+    {
+        if (isAllInsertionsSelected == false)
+        {
+            insertionSelectAllButtonTick.SetActive(true);
+
+            for (int i = 0; i < insertionsList.Length; i++)
+            {
+                insertionsList[i].SetActive(true);
+            }
+            foreach (Transform a in insertionSubButtonsParent.transform)
+            {
+                a.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+            }
+            isAllInsertionsSelected = true;
+        }
+        else
+        {
+            insertionSelectAllButtonTick.SetActive(false);
+
+            for (int i = 0; i < insertionsList.Length; i++)
+            {
+                insertionsList[i].SetActive(false);
+            }
+
+            foreach (Transform z in insertionSubButtonsParent.transform)
+            {
+                z.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+
+            }
+
+            isAllInsertionsSelected = false;
+        }
+    }
+
+    public void selectAllOrigins()
+    {
+        if (isAllOriginsSelected == false)
+        {
+            originsSelectAllButtonTick.SetActive(true);
+
+            for (int k = 0; k < originsList.Length; k++)
+            {
+                originsList[k].SetActive(true);
+            }
+            foreach (Transform t in originsSubButtonsParent.transform)
+            {
+                t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+            }
+            isAllOriginsSelected = true;
+        }
+        else
+        {
+            originsSelectAllButtonTick.SetActive(false);
+
+            for (int k = 0; k < originsList.Length; k++)
+            {
+                originsList[k].SetActive(false);
+            }
+
+            foreach (Transform t in originsSubButtonsParent.transform)
+            {
+                t.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+
+            }
+
+            isAllOriginsSelected = false;
+        }
+    }
+
+    public void selectAllLigaments()
+    {
+        if (isAllLigamentsSelected == false)
+        {
+            ligamentsSelectAllButtonTick.SetActive(true);
+
+            for (int l = 0; l < ligamentsList.Length; l++)
+            {
+                ligamentsList[l].SetActive(true);
+            }
+            foreach (Transform t in ligamentsSubButtonsParent.transform)
+            {
+                t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+            }
+            isAllLigamentsSelected = true;
+        }
+        else
+        {
+            ligamentsSelectAllButtonTick.SetActive(false);
+
+            for (int l = 0; l < ligamentsList.Length; l++)
+            {
+                ligamentsList[l].SetActive(false);
+            }
+
+            foreach (Transform t in ligamentsSubButtonsParent.transform)
+            {
+                t.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+
+            }
+
+            isAllLigamentsSelected = false;
+        }
+    }
 
 
     public void onPecularitiesButtonClick()
