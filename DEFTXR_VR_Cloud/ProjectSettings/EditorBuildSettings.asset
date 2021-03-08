@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/DEFTXR/Scenes/MainMenu.unity
     guid: 7a8acf5796e8dbe499ac594991d6c921
   - enabled: 1

@@ -49,9 +49,22 @@ public class FemurZoneBManager : MonoBehaviour
     public GameObject originBtn;
     public GameObject featureBtn;
 
+    public GameObject featureSelectText;
+    public GameObject featureDeselectText;
+
+    public GameObject originSelectText;
+    public GameObject originDeselectText;
+
+    public GameObject ligamentsSelectText;
+    public GameObject ligamentsDeselectText;
+
+    public GameObject insertionSelectText;
+    public GameObject insertionDeselectText;
+
     // Use this for initialization
     void Start()
     {
+
         isAllFeaturesSelected = false;
         isAllInsertionsSelected = false;
         isAllOriginsSelected = false;
@@ -174,6 +187,8 @@ public class FemurZoneBManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllFeaturesSelected = true;
+            featureDeselectText.SetActive(true);
+            featureSelectText.SetActive(false);
         }
         else
         {
@@ -191,6 +206,8 @@ public class FemurZoneBManager : MonoBehaviour
             }
 
             isAllFeaturesSelected = false;
+            featureDeselectText.SetActive(false);
+            featureSelectText.SetActive(true);
         }
     }
 
@@ -209,6 +226,8 @@ public class FemurZoneBManager : MonoBehaviour
                 a.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllInsertionsSelected = true;
+            insertionDeselectText.SetActive(true);
+            insertionSelectText.SetActive(false);
         }
         else
         {
@@ -226,6 +245,8 @@ public class FemurZoneBManager : MonoBehaviour
             }
 
             isAllInsertionsSelected = false;
+            insertionDeselectText.SetActive(false);
+            insertionSelectText.SetActive(true);
         }
     }
 
@@ -244,6 +265,8 @@ public class FemurZoneBManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllOriginsSelected = true;
+            originDeselectText.SetActive(true);
+            originSelectText.SetActive(false);
         }
         else
         {
@@ -261,6 +284,8 @@ public class FemurZoneBManager : MonoBehaviour
             }
 
             isAllOriginsSelected = false;
+            originDeselectText.SetActive(false);
+            originSelectText.SetActive(true);
         }
     }
 
@@ -279,6 +304,8 @@ public class FemurZoneBManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllLigamentsSelected = true;
+            ligamentsDeselectText.SetActive(true);
+            ligamentsSelectText.SetActive(false);
         }
         else
         {
@@ -296,14 +323,17 @@ public class FemurZoneBManager : MonoBehaviour
             }
 
             isAllLigamentsSelected = false;
+            ligamentsDeselectText.SetActive(false);
+            ligamentsSelectText.SetActive(true);
         }
     }
 
     public void onInsertionsButtonClick()
     {
+        
         if (inserAttch == false)
         {
-
+           
             insertionObj.SetActive(true);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(false);
@@ -311,6 +341,7 @@ public class FemurZoneBManager : MonoBehaviour
             featuresObj.SetActive(false);
             insertion_dropdown.SetActive(true);
             insertionBtn.GetComponent<Image>().sprite = enable;
+
             inserAttch = true;
         }
         else
@@ -332,7 +363,6 @@ public class FemurZoneBManager : MonoBehaviour
     {
         if (origAttach == false)
         {
-
             insertionObj.SetActive(false);
             originObj.SetActive(true);
             femurDefaultObj.SetActive(false);
@@ -345,8 +375,6 @@ public class FemurZoneBManager : MonoBehaviour
         }
         else
         {
-
-
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(true);
@@ -395,7 +423,7 @@ public class FemurZoneBManager : MonoBehaviour
     {
         if (featureAttach == false)
         {
-            
+
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(false);
@@ -419,4 +447,5 @@ public class FemurZoneBManager : MonoBehaviour
             featureAttach = false;
         }
     }
+
 }
