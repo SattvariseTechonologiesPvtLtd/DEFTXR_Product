@@ -30,6 +30,12 @@ public class Patella_GameManager : MonoBehaviour
     public GameObject insertionBtn;
     public GameObject ligamentsBtn;
 
+    public GameObject ligamentsSelectText;
+    public GameObject ligamentsDeselectText;
+
+    public GameObject insertionSelectText;
+    public GameObject insertionDeselectText;
+
     // Use this for initialization
     void Start()
     {
@@ -67,6 +73,8 @@ public class Patella_GameManager : MonoBehaviour
                 a.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllInsertionsSelected = true;
+            insertionDeselectText.SetActive(true);
+            insertionSelectText.SetActive(false);
         }
         else
         {
@@ -82,8 +90,9 @@ public class Patella_GameManager : MonoBehaviour
                 z.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
 
             }
-
             isAllInsertionsSelected = false;
+            insertionDeselectText.SetActive(false);
+            insertionSelectText.SetActive(true);
         }
     }
 
@@ -102,6 +111,8 @@ public class Patella_GameManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllLigamentsSelected = true;
+            ligamentsDeselectText.SetActive(true);
+            ligamentsSelectText.SetActive(false);
         }
         else
         {
@@ -119,13 +130,24 @@ public class Patella_GameManager : MonoBehaviour
             }
 
             isAllLigamentsSelected = false;
+            ligamentsDeselectText.SetActive(false);
+            ligamentsSelectText.SetActive(true);
         }
+    }
+
+    private void insertionsButtonClickReset()
+    {
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
     }
 
     public void onInsertionsButtonClick()
     {
         if (inserAttch == false)
         {
+            insertionsButtonClickReset();
 
             insertionObj.SetActive(true);
            
@@ -151,12 +173,20 @@ public class Patella_GameManager : MonoBehaviour
         }
     }
 
+    private void ligamentsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
 
+    }
 
     public void onLigamentsButtonClick()
     {
         if (ligamentAttach == false)
         {
+            ligamentsButtonClickReset();
 
             insertionObj.SetActive(false);
             

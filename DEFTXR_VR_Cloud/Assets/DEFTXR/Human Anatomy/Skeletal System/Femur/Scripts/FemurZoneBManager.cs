@@ -211,7 +211,7 @@ public class FemurZoneBManager : MonoBehaviour
         }
     }
 
-    IEnumerator selectAllInsertions()
+    public void selectAllInsertions()
     {
         if (isAllInsertionsSelected == false)
         {
@@ -248,7 +248,7 @@ public class FemurZoneBManager : MonoBehaviour
             insertionDeselectText.SetActive(false);
             insertionSelectText.SetActive(true);
         }
-        yield return null;
+
     }
 
     public void selectAllOrigins()
@@ -304,9 +304,10 @@ public class FemurZoneBManager : MonoBehaviour
             {
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
+            
+            isAllLigamentsSelected = true;
             ligamentsDeselectText.SetActive(true);
             ligamentsSelectText.SetActive(false);
-            isAllLigamentsSelected = true;
         }
         else
         {
@@ -321,9 +322,10 @@ public class FemurZoneBManager : MonoBehaviour
             {
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
             }
+           
+            isAllLigamentsSelected = false;
             ligamentsDeselectText.SetActive(false);
             ligamentsSelectText.SetActive(true);
-            isAllLigamentsSelected = false;
         }
     }
 

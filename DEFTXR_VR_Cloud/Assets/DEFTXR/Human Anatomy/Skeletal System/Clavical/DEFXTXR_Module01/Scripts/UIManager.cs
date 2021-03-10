@@ -45,12 +45,12 @@ public class UIManager : MonoBehaviour
         carpalBone.SetActive(false);
 
         //LowerLimb Bones
-        femurBone.SetActive(true);
-        tibiaBone.SetActive(false);
+        femurBone.SetActive(false);
+        tibiaBone.SetActive(true);
         patellaBone.SetActive(false);
         hipBone.SetActive(false);
 
-        mainUI.SetActive(true);
+        //mainUI.SetActive(true);
 
     }
 
