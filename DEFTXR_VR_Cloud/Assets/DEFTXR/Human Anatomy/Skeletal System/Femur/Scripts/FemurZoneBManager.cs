@@ -85,92 +85,92 @@ public class FemurZoneBManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-   /* public void onFeaturesSubButtonClick()
-    {
-       featureSelectAllButtonTick.SetActive(true);
-       isAllFeaturesSelected = true;
+    /* public void onFeaturesSubButtonClick()
+     {
+        featureSelectAllButtonTick.SetActive(true);
+        isAllFeaturesSelected = true;
 
-        foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
-        {
-            for (int j = 0;  j < featuresList.Length; j++)
-            {
-                if (j == i)
-                {
-                     featuresList[j].SetActive(true);
-                }
-                else
-                {
-                    featuresList[j].SetActive(false);
-                }
-            }
-        }
-    }
+         foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
+         {
+             for (int j = 0;  j < featuresList.Length; j++)
+             {
+                 if (j == i)
+                 {
+                      featuresList[j].SetActive(true);
+                 }
+                 else
+                 {
+                     featuresList[j].SetActive(false);
+                 }
+             }
+         }
+     }
 
-    public void onInsertionSubButtonClick()
-    {
-        insertionSelectAllButtonTick.SetActive(false);
-        isAllInsertionSelected = false;
+     public void onInsertionSubButtonClick()
+     {
+         insertionSelectAllButtonTick.SetActive(false);
+         isAllInsertionSelected = false;
 
-        foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
-        {
-            for (int j = 0; j < insertionList.Length; j++)
-            {
-                if (j == i)
-                {
-                    insertionList[j].SetActive(true);
-                }
-                else
-                {
-                    insertionList[j].SetActive(false);
-                }
-            }
-        }
-    }
+         foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
+         {
+             for (int j = 0; j < insertionList.Length; j++)
+             {
+                 if (j == i)
+                 {
+                     insertionList[j].SetActive(true);
+                 }
+                 else
+                 {
+                     insertionList[j].SetActive(false);
+                 }
+             }
+         }
+     }
 
-    public void onOriginSubButtonClick()
-    {
-        originSelectAllButtonTick.SetActive(false);
-        isAllOriginSelected = false;
+     public void onOriginSubButtonClick()
+     {
+         originSelectAllButtonTick.SetActive(false);
+         isAllOriginSelected = false;
 
-        foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
-        {
-            for (int j = 0; j < originList.Length; j++)
-            {
-                if (j == i)
-                {
-                    originList[j].SetActive(true);
-                }
-                else
-                {
-                    originList[j].SetActive(false);
-                }
-            }
-        }
-    }
+         foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
+         {
+             for (int j = 0; j < originList.Length; j++)
+             {
+                 if (j == i)
+                 {
+                     originList[j].SetActive(true);
+                 }
+                 else
+                 {
+                     originList[j].SetActive(false);
+                 }
+             }
+         }
+     }
 
-    public void onLigamentSubButtonClick()
-    {
-        ligamentSelectAllButtonTick.SetActive(false);
-        isAllLigamentSelected = false;
+     public void onLigamentSubButtonClick()
+     {
+         ligamentSelectAllButtonTick.SetActive(false);
+         isAllLigamentSelected = false;
 
-        foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
-        {
-            for (int j = 0; j < ligamentList.Length; j++)
-            {
-                if (j == i)
-                {
-                    ligamentList[j].SetActive(true);
-                }
-                else
-                {
-                    ligamentList[j].SetActive(false);
-                }
-            }
-        }
-    }*/
+         foreach (int i in MultiSelectDropdown_Manager.Instance.selectedButtonIdList)
+         {
+             for (int j = 0; j < ligamentList.Length; j++)
+             {
+                 if (j == i)
+                 {
+                     ligamentList[j].SetActive(true);
+                 }
+                 else
+                 {
+                     ligamentList[j].SetActive(false);
+                 }
+             }
+         }
+     }*/
 
     public void selectAllFeatures()
     {
@@ -179,8 +179,8 @@ public class FemurZoneBManager : MonoBehaviour
             featureSelectAllButtonTick.SetActive(true);
 
             for (int j = 0; j < featuresList.Length; j++)
-            {               
-               featuresList[j].SetActive(true);  
+            {
+                featuresList[j].SetActive(true);
             }
             foreach (Transform t in subButtonsParent.transform)
             {
@@ -211,7 +211,7 @@ public class FemurZoneBManager : MonoBehaviour
         }
     }
 
-    public void selectAllInsertions()
+    IEnumerator selectAllInsertions()
     {
         if (isAllInsertionsSelected == false)
         {
@@ -248,6 +248,7 @@ public class FemurZoneBManager : MonoBehaviour
             insertionDeselectText.SetActive(false);
             insertionSelectText.SetActive(true);
         }
+        yield return null;
     }
 
     public void selectAllOrigins()
@@ -303,9 +304,9 @@ public class FemurZoneBManager : MonoBehaviour
             {
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
-            isAllLigamentsSelected = true;
             ligamentsDeselectText.SetActive(true);
             ligamentsSelectText.SetActive(false);
+            isAllLigamentsSelected = true;
         }
         else
         {
@@ -319,21 +320,37 @@ public class FemurZoneBManager : MonoBehaviour
             foreach (Transform t in ligamentsSubButtonsParent.transform)
             {
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
-
             }
-
-            isAllLigamentsSelected = false;
             ligamentsDeselectText.SetActive(false);
             ligamentsSelectText.SetActive(true);
+            isAllLigamentsSelected = false;
         }
     }
 
+    private void insertionsButtonClickReset()
+    {
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
+
+        featureAttach = true;
+        onFeaturesButtonClick();
+        isAllFeaturesSelected = true;
+        selectAllFeatures();
+    }
     public void onInsertionsButtonClick()
     {
-        
+        insertionsButtonClickReset();
+
         if (inserAttch == false)
         {
-           
+            insertionsButtonClickReset();
             insertionObj.SetActive(true);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(false);
@@ -357,12 +374,34 @@ public class FemurZoneBManager : MonoBehaviour
 
             inserAttch = false;
         }
+        
+    }
+
+    private void originsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
+
+        featureAttach = true;
+        onFeaturesButtonClick();
+        isAllFeaturesSelected = true;
+        selectAllFeatures();
     }
 
     public void onOriginsButtonClick()
     {
+        
+
         if (origAttach == false)
         {
+            originsButtonClickReset();
             insertionObj.SetActive(false);
             originObj.SetActive(true);
             femurDefaultObj.SetActive(false);
@@ -387,11 +426,31 @@ public class FemurZoneBManager : MonoBehaviour
         }
     }
 
+    private void ligamentsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+        featureAttach = true;
+        onFeaturesButtonClick();
+        isAllFeaturesSelected = true;
+        selectAllFeatures();
+    }
+
     public void onLigamentsButtonClick()
     {
+        
+
         if (ligamentAttach == false)
         {
-
+            ligamentsButtonClickReset();
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(false);
@@ -417,13 +476,34 @@ public class FemurZoneBManager : MonoBehaviour
 
             ligamentAttach = false;
         }
+
+    }
+
+    private void featureButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
     }
 
     public void onFeaturesButtonClick()
     {
+        
+
         if (featureAttach == false)
         {
-
+            featureButtonClickReset();
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(false);
@@ -435,7 +515,6 @@ public class FemurZoneBManager : MonoBehaviour
         }
         else
         {
-
 
             insertionObj.SetActive(false);
             originObj.SetActive(false);
