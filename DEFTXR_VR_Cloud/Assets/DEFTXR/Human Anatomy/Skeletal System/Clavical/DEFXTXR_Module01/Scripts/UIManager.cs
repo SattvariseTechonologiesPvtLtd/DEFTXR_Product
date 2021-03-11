@@ -45,8 +45,8 @@ public class UIManager : MonoBehaviour
         carpalBone.SetActive(false);
 
         //LowerLimb Bones
-        femurBone.SetActive(false);
-        tibiaBone.SetActive(true);
+        femurBone.SetActive(true);
+        tibiaBone.SetActive(false);
         patellaBone.SetActive(false);
         hipBone.SetActive(false);
 
@@ -365,3 +365,5 @@ public class UIManager : MonoBehaviour
 
 
 }
+
+
