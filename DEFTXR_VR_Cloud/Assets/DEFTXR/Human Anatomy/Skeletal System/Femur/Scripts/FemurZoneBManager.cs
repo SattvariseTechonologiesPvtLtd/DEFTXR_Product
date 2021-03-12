@@ -346,9 +346,10 @@ public class FemurZoneBManager : MonoBehaviour
         isAllFeaturesSelected = true;
         selectAllFeatures();
     }
+
     public void onInsertionsButtonClick()
     {
-        insertionsButtonClickReset();
+        
 
         if (inserAttch == false)
         {
@@ -404,6 +405,7 @@ public class FemurZoneBManager : MonoBehaviour
         if (origAttach == false)
         {
             originsButtonClickReset();
+
             insertionObj.SetActive(false);
             originObj.SetActive(true);
             femurDefaultObj.SetActive(false);
@@ -453,6 +455,7 @@ public class FemurZoneBManager : MonoBehaviour
         if (ligamentAttach == false)
         {
             ligamentsButtonClickReset();
+
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             femurDefaultObj.SetActive(false);

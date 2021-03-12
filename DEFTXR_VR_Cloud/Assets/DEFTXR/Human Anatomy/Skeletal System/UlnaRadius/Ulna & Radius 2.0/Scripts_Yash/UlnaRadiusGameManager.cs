@@ -42,6 +42,18 @@ public class UlnaRadiusGameManager : MonoBehaviour
     public GameObject originBtn;
     public GameObject featureBtn;
 
+    public GameObject featureSelectText;
+    public GameObject featureDeselectText;
+
+    public GameObject originSelectText;
+    public GameObject originDeselectText;
+
+    public GameObject ligamentsSelectText;
+    public GameObject ligamentsDeselectText;
+
+    public GameObject insertionSelectText;
+    public GameObject insertionDeselectText;
+
     // Use this for initialization
     void Start()
     {
@@ -82,6 +94,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllFeaturesSelected = true;
+            featureDeselectText.SetActive(true);
+            featureSelectText.SetActive(false);
         }
         else
         {
@@ -99,6 +113,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
             }
 
             isAllFeaturesSelected = false;
+            featureDeselectText.SetActive(false);
+            featureSelectText.SetActive(true);
         }
     }
 
@@ -117,6 +133,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
                 a.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllInsertionsSelected = true;
+            insertionDeselectText.SetActive(true);
+            insertionSelectText.SetActive(false);
         }
         else
         {
@@ -134,6 +152,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
             }
 
             isAllInsertionsSelected = false;
+            insertionDeselectText.SetActive(false);
+            insertionSelectText.SetActive(true);
         }
     }
 
@@ -152,6 +172,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllOriginsSelected = true;
+            originDeselectText.SetActive(true);
+            originSelectText.SetActive(false);
         }
         else
         {
@@ -169,6 +191,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
             }
 
             isAllOriginsSelected = false;
+            originDeselectText.SetActive(false);
+            originSelectText.SetActive(true);
         }
     }
 
@@ -187,6 +211,8 @@ public class UlnaRadiusGameManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllLigamentsSelected = true;
+            ligamentsDeselectText.SetActive(true);
+            ligamentsSelectText.SetActive(false);
         }
         else
         {
@@ -204,13 +230,34 @@ public class UlnaRadiusGameManager : MonoBehaviour
             }
 
             isAllLigamentsSelected = false;
+            ligamentsDeselectText.SetActive(false);
+            ligamentsSelectText.SetActive(true);
         }
+    }
+
+    private void insertionsButtonClickReset()
+    {
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
+
+        featureAttach = true;
+        onFeaturesButtonClick();
+        isAllFeaturesSelected = true;
+        selectAllFeatures();
     }
 
     public void onInsertionsButtonClick()
     {
         if (inserAttch == false)
         {
+            insertionsButtonClickReset();
 
             insertionObj.SetActive(true);
             originObj.SetActive(false);
@@ -239,10 +286,29 @@ public class UlnaRadiusGameManager : MonoBehaviour
         }
     }
 
+    private void originsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
+
+        featureAttach = true;
+        onFeaturesButtonClick();
+        isAllFeaturesSelected = true;
+        selectAllFeatures();
+    }
+
     public void onOriginsButtonClick()
     {
         if (origAttach == false)
         {
+            originsButtonClickReset();
 
             insertionObj.SetActive(false);
             originObj.SetActive(true);
@@ -272,10 +338,29 @@ public class UlnaRadiusGameManager : MonoBehaviour
         }
     }
 
+    private void ligamentsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+        featureAttach = true;
+        onFeaturesButtonClick();
+        isAllFeaturesSelected = true;
+        selectAllFeatures();
+    }
+
     public void onLigamentsButtonClick()
     {
         if (ligamentAttach == false)
         {
+            ligamentsButtonClickReset();
 
             insertionObj.SetActive(false);
             originObj.SetActive(false);
@@ -306,10 +391,29 @@ public class UlnaRadiusGameManager : MonoBehaviour
         }
     }
 
+    private void featureButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+        ligamentAttach = true;
+        onLigamentsButtonClick();
+        isAllLigamentsSelected = true;
+        selectAllLigaments();
+    }
+
     public void onFeaturesButtonClick()
     {
         if (featureAttach == false)
         {
+            featureButtonClickReset();
 
             insertionObj.SetActive(false);
             originObj.SetActive(false);

@@ -28,6 +28,12 @@ public class CarpalGameManager : MonoBehaviour
     public GameObject insertionBtn;
     public GameObject originBtn;
 
+    public GameObject originSelectText;
+    public GameObject originDeselectText;
+
+    public GameObject insertionSelectText;
+    public GameObject insertionDeselectText;
+
     // Use this for initialization
     void Start()
     {
@@ -67,6 +73,8 @@ public class CarpalGameManager : MonoBehaviour
                 a.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllInsertionsSelected = true;
+            insertionDeselectText.SetActive(true);
+            insertionSelectText.SetActive(false);
         }
         else
         {
@@ -84,6 +92,8 @@ public class CarpalGameManager : MonoBehaviour
             }
 
             isAllInsertionsSelected = false;
+            insertionDeselectText.SetActive(false);
+            insertionSelectText.SetActive(true);
         }
     }
 
@@ -102,6 +112,8 @@ public class CarpalGameManager : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllOriginsSelected = true;
+            originDeselectText.SetActive(true);
+            originSelectText.SetActive(false);
         }
         else
         {
@@ -119,15 +131,25 @@ public class CarpalGameManager : MonoBehaviour
             }
 
             isAllOriginsSelected = false;
+            originDeselectText.SetActive(false);
+            originSelectText.SetActive(true);
         }
     }
 
- 
+    private void insertionsButtonClickReset()
+    {
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+    }
 
     public void onInsertionsButtonClick()
     {
         if (inserAttch == false)
         {
+            insertionsButtonClickReset();
 
             insertionObj.SetActive(true);
             originObj.SetActive(false);
@@ -154,10 +176,19 @@ public class CarpalGameManager : MonoBehaviour
         }
     }
 
+    private void originsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+    }
+
     public void onOriginsButtonClick()
     {
         if (origAttach == false)
         {
+            originsButtonClickReset();
 
             insertionObj.SetActive(false);
             originObj.SetActive(true);
