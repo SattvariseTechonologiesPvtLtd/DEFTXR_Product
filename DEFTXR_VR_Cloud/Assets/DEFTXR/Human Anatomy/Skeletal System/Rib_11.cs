@@ -29,6 +29,12 @@ public class Rib_11 : MonoBehaviour
     public GameObject insertionBtn;
     public GameObject originBtn;
 
+    public GameObject originSelectText;
+    public GameObject originDeselectText;
+
+    public GameObject insertionSelectText;
+    public GameObject insertionDeselectText;
+
     // Use this for initialization
     void Start()
     {
@@ -64,6 +70,8 @@ public class Rib_11 : MonoBehaviour
                 a.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllInsertionsSelected = true;
+            insertionDeselectText.SetActive(true);
+            insertionSelectText.SetActive(false);
         }
         else
         {
@@ -81,6 +89,8 @@ public class Rib_11 : MonoBehaviour
             }
 
             isAllInsertionsSelected = false;
+            insertionDeselectText.SetActive(false);
+            insertionSelectText.SetActive(true);
         }
     }
 
@@ -99,6 +109,8 @@ public class Rib_11 : MonoBehaviour
                 t.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
             isAllOriginsSelected = true;
+            originDeselectText.SetActive(true);
+            originSelectText.SetActive(false);
         }
         else
         {
@@ -116,18 +128,31 @@ public class Rib_11 : MonoBehaviour
             }
 
             isAllOriginsSelected = false;
+            originDeselectText.SetActive(false);
+            originSelectText.SetActive(true);
         }
     }
 
+
+    private void insertionsButtonClickReset()
+    {
+        origAttach = true;
+        onOriginsButtonClick();
+        isAllOriginsSelected = true;
+        selectAllOrigins();
+
+    }
 
     public void onInsertionsButtonClick()
     {
         if (inserAttch == false)
         {
+            insertionsButtonClickReset();
 
             insertionObj.SetActive(true);
             originObj.SetActive(false);
             DefaultObj.SetActive(false);
+
             insertion_dropdown.SetActive(true);
 
             insertionBtn.GetComponent<Image>().sprite = enable;
@@ -140,6 +165,7 @@ public class Rib_11 : MonoBehaviour
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
+
             insertion_dropdown.SetActive(false);
 
             insertionBtn.GetComponent<Image>().sprite = disable;
@@ -148,14 +174,24 @@ public class Rib_11 : MonoBehaviour
         }
     }
 
+    private void originsButtonClickReset()
+    {
+        inserAttch = true;
+        onInsertionsButtonClick();
+        isAllInsertionsSelected = true;
+        selectAllInsertions();
+    }
+
     public void onOriginsButtonClick()
     {
         if (origAttach == false)
         {
+            originsButtonClickReset();
 
             insertionObj.SetActive(false);
             originObj.SetActive(true);
             DefaultObj.SetActive(false);
+
             origin_dropdown.SetActive(true);
 
             originBtn.GetComponent<Image>().sprite = enable;
@@ -169,6 +205,7 @@ public class Rib_11 : MonoBehaviour
             insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
+
             origin_dropdown.SetActive(false);
 
             originBtn.GetComponent<Image>().sprite = disable;
