@@ -31,8 +31,7 @@ public class MultiSelectDropDownButtonManager : MonoBehaviour
 
     public void tickMarkToggle()
     {
-        if (isTickMarked == false)
-        {
+        if (isTickMarked == false){
 
             myButtonTick.SetActive(true);
             myReferenceObject.SetActive(true);
@@ -41,8 +40,7 @@ public class MultiSelectDropDownButtonManager : MonoBehaviour
             MultiSelectDropdown_Manager.Instance.selectedButtonIdList.Add(myButtonId);
             MultiSelectDropdown_Manager.Instance.onDropDownButtonSelection();
         }
-        else
-        {
+        else {
             myButtonTick.SetActive(false);
             myReferenceObject.SetActive(false);
             isTickMarked = false;

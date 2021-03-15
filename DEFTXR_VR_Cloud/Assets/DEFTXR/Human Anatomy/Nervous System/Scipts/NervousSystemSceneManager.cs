@@ -21,8 +21,8 @@ public class NervousSystemSceneManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        ZoneA.SetActive(true);
-        ZoneB.SetActive(false);
+        ZoneA.SetActive(false);
+        ZoneB.SetActive(true);
         ZoneC.SetActive(false);
         zoneAPlatform.SetActive(false);
         Debug.Log("called here");
@@ -32,5 +32,16 @@ public class NervousSystemSceneManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void onIntroductionButtonClick()
+    {
+        ZoneA.SetActive(true);
+
+    }
+
+    public void onNervousSystemDetailsBtnClick()
+    {
+        ZoneC.SetActive(true);
     }
 }
