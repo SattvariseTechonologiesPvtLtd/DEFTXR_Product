@@ -5,25 +5,25 @@ using UnityEngine.UI;
 public class HipBone_GameManager : MonoBehaviour
 {
     public GameObject zoneBObj;
-    public GameObject insertionObj, originObj, DefaultObj, ligamentObj, featuresObj;
+    public GameObject insertionObj, originObj, DefaultObj, ligamentObj;
 
-    public bool attch, inserAttch, ligamentAttach, origAttach, featureAttach = false;
+    public bool attch, inserAttch, ligamentAttach, origAttach = false;
 
     public Sprite enable, disable;
 
-    public GameObject[] featuresList;
+    //public GameObject[] featuresList;
     public GameObject[] insertionsList;
     public GameObject[] originsList;
     public GameObject[] ligamentsList;
 
-    public bool isAllFeaturesSelected;
+    //public bool isAllFeaturesSelected;
     public bool isAllInsertionsSelected;
     public bool isAllLigamentsSelected;
     public bool isAllOriginsSelected;
 
-    public GameObject feature_dropdown;
-    public GameObject featureSelectAllButtonTick;
-    public GameObject subButtonsParent;
+    //public GameObject feature_dropdown;
+   // public GameObject featureSelectAllButtonTick;
+    //public GameObject subButtonsParent;
 
     public GameObject ligaments_dropdown;
     public GameObject ligamentsSelectAllButtonTick;
@@ -40,10 +40,10 @@ public class HipBone_GameManager : MonoBehaviour
     public GameObject insertionBtn;
     public GameObject ligamentsBtn;
     public GameObject originBtn;
-    public GameObject featureBtn;
+   // public GameObject featureBtn;
 
-    public GameObject featureSelectText;
-    public GameObject featureDeselectText;
+   // public GameObject featureSelectText;
+   // public GameObject featureDeselectText;
 
     public GameObject originSelectText;
     public GameObject originDeselectText;
@@ -57,7 +57,7 @@ public class HipBone_GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        isAllFeaturesSelected = false;
+       // isAllFeaturesSelected = false;
         isAllInsertionsSelected = false;
         isAllOriginsSelected = false;
         isAllLigamentsSelected = false;
@@ -65,9 +65,9 @@ public class HipBone_GameManager : MonoBehaviour
         insertion_dropdown.SetActive(false);
         ligaments_dropdown.SetActive(false);
         origin_dropdown.SetActive(false);
-        feature_dropdown.SetActive(false);
+       // feature_dropdown.SetActive(false);
 
-        featureBtn.GetComponent<Image>().sprite = disable;
+       // featureBtn.GetComponent<Image>().sprite = disable;
         insertionBtn.GetComponent<Image>().sprite = disable;
         originBtn.GetComponent<Image>().sprite = disable;
         ligamentsBtn.GetComponent<Image>().sprite = disable;
@@ -79,7 +79,7 @@ public class HipBone_GameManager : MonoBehaviour
 
     }
 
-    public void selectAllFeatures()
+   /* public void selectAllFeatures()
     {
         if (isAllFeaturesSelected == false)
         {
@@ -116,7 +116,7 @@ public class HipBone_GameManager : MonoBehaviour
             featureDeselectText.SetActive(false);
             featureSelectText.SetActive(true);
         }
-    }
+    }*/
 
     public void selectAllInsertions()
     {
@@ -245,10 +245,10 @@ public class HipBone_GameManager : MonoBehaviour
         isAllLigamentsSelected = true;
         selectAllLigaments();
 
-        featureAttach = true;
-        onFeaturesButtonClick();
-        isAllFeaturesSelected = true;
-        selectAllFeatures();
+        //featureAttach = true;
+        //onFeaturesButtonClick();
+       // isAllFeaturesSelected = true;
+        //selectAllFeatures();
     }
 
     public void onInsertionsButtonClick()
@@ -261,7 +261,7 @@ public class HipBone_GameManager : MonoBehaviour
             originObj.SetActive(false);
             DefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
-            featuresObj.SetActive(false);
+            //featuresObj.SetActive(false);
             insertion_dropdown.SetActive(true);
 
             insertionBtn.GetComponent<Image>().sprite = enable;
@@ -275,7 +275,7 @@ public class HipBone_GameManager : MonoBehaviour
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
-            featuresObj.SetActive(false);
+            //featuresObj.SetActive(false);
             insertion_dropdown.SetActive(false);
 
             insertionBtn.GetComponent<Image>().sprite = disable;
@@ -295,10 +295,10 @@ public class HipBone_GameManager : MonoBehaviour
         isAllLigamentsSelected = true;
         selectAllLigaments();
 
-        featureAttach = true;
-        onFeaturesButtonClick();
-        isAllFeaturesSelected = true;
-        selectAllFeatures();
+        //featureAttach = true;
+        //onFeaturesButtonClick();
+       // isAllFeaturesSelected = true;
+       // selectAllFeatures();
     }
     public void onOriginsButtonClick()
     {
@@ -310,7 +310,7 @@ public class HipBone_GameManager : MonoBehaviour
             originObj.SetActive(true);
             DefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
-            featuresObj.SetActive(false);
+            //featuresObj.SetActive(false);
             origin_dropdown.SetActive(true);
 
             originBtn.GetComponent<Image>().sprite = enable;
@@ -325,7 +325,7 @@ public class HipBone_GameManager : MonoBehaviour
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
-            featuresObj.SetActive(false);
+            //featuresObj.SetActive(false);
             origin_dropdown.SetActive(false);
 
             originBtn.GetComponent<Image>().sprite = disable;
@@ -346,10 +346,10 @@ public class HipBone_GameManager : MonoBehaviour
         isAllOriginsSelected = true;
         selectAllOrigins();
 
-        featureAttach = true;
-        onFeaturesButtonClick();
-        isAllFeaturesSelected = true;
-        selectAllFeatures();
+        //featureAttach = true;
+       // onFeaturesButtonClick();
+       // isAllFeaturesSelected = true;
+//selectAllFeatures();
     }
 
     public void onLigamentsButtonClick()
@@ -362,7 +362,7 @@ public class HipBone_GameManager : MonoBehaviour
             originObj.SetActive(false);
             DefaultObj.SetActive(false);
             ligamentObj.SetActive(true);
-            featuresObj.SetActive(false);
+            //featuresObj.SetActive(false);
             ligaments_dropdown.SetActive(true);
 
             ligamentsBtn.GetComponent<Image>().sprite = enable;
@@ -377,7 +377,7 @@ public class HipBone_GameManager : MonoBehaviour
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
-            featuresObj.SetActive(false);
+            //featuresObj.SetActive(false);
             ligaments_dropdown.SetActive(false);
 
             ligamentsBtn.GetComponent<Image>().sprite = disable;
@@ -387,7 +387,7 @@ public class HipBone_GameManager : MonoBehaviour
         }
     }
 
-    private void featureButtonClickReset()
+   /* private void featureButtonClickReset()
     {
         inserAttch = true;
         onInsertionsButtonClick();
@@ -403,9 +403,9 @@ public class HipBone_GameManager : MonoBehaviour
         onLigamentsButtonClick();
         isAllLigamentsSelected = true;
         selectAllLigaments();
-    }
+    }*/
 
-    public void onFeaturesButtonClick()
+    /*public void onFeaturesButtonClick()
     {
         if (featureAttach == false)
         {
@@ -437,5 +437,5 @@ public class HipBone_GameManager : MonoBehaviour
 
             featureAttach = false;
         }
-    }
+    }*/
 }

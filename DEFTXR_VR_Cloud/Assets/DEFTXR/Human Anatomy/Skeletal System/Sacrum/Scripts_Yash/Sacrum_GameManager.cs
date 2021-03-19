@@ -5,19 +5,19 @@ using UnityEngine.UI;
 public class Sacrum_GameManager : MonoBehaviour
 {
     public GameObject zoneBObj;
-    public GameObject insertionObj, originObj, DefaultObj, ligamentObj, featuresObj;
+    public GameObject originObj, DefaultObj, ligamentObj, featuresObj;
 
-    public bool attch, inserAttch, ligamentAttach, origAttach, featureAttach = false;
+    public bool attch, ligamentAttach, origAttach, featureAttach = false;
 
     public Sprite enable, disable;
 
     public GameObject[] featuresList;
-    public GameObject[] insertionsList;
+    //public GameObject[] insertionsList;
     public GameObject[] originsList;
     public GameObject[] ligamentsList;
 
     public bool isAllFeaturesSelected;
-    public bool isAllInsertionsSelected;
+    //public bool isAllInsertionsSelected;
     public bool isAllLigamentsSelected;
     public bool isAllOriginsSelected;
 
@@ -33,11 +33,11 @@ public class Sacrum_GameManager : MonoBehaviour
     public GameObject originsSelectAllButtonTick;
     public GameObject originsSubButtonsParent;
 
-    public GameObject insertion_dropdown;
-    public GameObject insertionsSelectAllButtonTick;
-    public GameObject insertionsSubButtonsParent;
+   // public GameObject insertion_dropdown;
+   // public GameObject insertionsSelectAllButtonTick;
+    //public GameObject insertionsSubButtonsParent;
 
-    public GameObject insertionBtn;
+    //public GameObject insertionBtn;
     public GameObject ligamentsBtn;
     public GameObject originBtn;
     public GameObject featureBtn;
@@ -51,24 +51,24 @@ public class Sacrum_GameManager : MonoBehaviour
     public GameObject ligamentsSelectText;
     public GameObject ligamentsDeselectText;
 
-    public GameObject insertionSelectText;
-    public GameObject insertionDeselectText;
+    //public GameObject insertionSelectText;
+    //public GameObject insertionDeselectText;
 
     // Use this for initialization
     void Start()
     {
         isAllFeaturesSelected = false;
-        isAllInsertionsSelected = false;
+        //isAllInsertionsSelected = false;
         isAllOriginsSelected = false;
         isAllLigamentsSelected = false;
 
-        insertion_dropdown.SetActive(false);
+        //insertion_dropdown.SetActive(false);
         ligaments_dropdown.SetActive(false);
         origin_dropdown.SetActive(false);
         feature_dropdown.SetActive(false);
 
         featureBtn.GetComponent<Image>().sprite = disable;
-        insertionBtn.GetComponent<Image>().sprite = disable;
+        //insertionBtn.GetComponent<Image>().sprite = disable;
         originBtn.GetComponent<Image>().sprite = disable;
         ligamentsBtn.GetComponent<Image>().sprite = disable;
     }
@@ -118,7 +118,7 @@ public class Sacrum_GameManager : MonoBehaviour
         }
     }
 
-    public void selectAllInsertions()
+    /*public void selectAllInsertions()
     {
         if (isAllInsertionsSelected == false)
         {
@@ -155,7 +155,7 @@ public class Sacrum_GameManager : MonoBehaviour
             insertionDeselectText.SetActive(false);
             insertionSelectText.SetActive(true);
         }
-    }
+    }*/
 
     public void selectAllOrigins()
     {
@@ -234,7 +234,7 @@ public class Sacrum_GameManager : MonoBehaviour
         }
     }
 
-    private void insertionsButtonClickReset()
+    /*private void insertionsButtonClickReset()
     {
         origAttach = true;
         onOriginsButtonClick();
@@ -250,8 +250,9 @@ public class Sacrum_GameManager : MonoBehaviour
         onFeaturesButtonClick();
         isAllFeaturesSelected = true;
         selectAllFeatures();
-    }
-    public void onInsertionsButtonClick()
+    }*/
+
+    /*public void onInsertionsButtonClick()
     {
         if (inserAttch == false)
         {
@@ -281,14 +282,14 @@ public class Sacrum_GameManager : MonoBehaviour
 
             inserAttch = false;
         }
-    }
+    }*/
 
     private void originsButtonClickReset()
     {
-        inserAttch = true;
-        onInsertionsButtonClick();
-        isAllInsertionsSelected = true;
-        selectAllInsertions();
+        //inserAttch = true;
+        //onInsertionsButtonClick();
+        //isAllInsertionsSelected = true;
+        //selectAllInsertions();
 
         ligamentAttach = true;
         onLigamentsButtonClick();
@@ -306,7 +307,7 @@ public class Sacrum_GameManager : MonoBehaviour
         if (origAttach == false)
         {
             originsButtonClickReset();
-            insertionObj.SetActive(false);
+            //insertionObj.SetActive(false);
             originObj.SetActive(true);
             DefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
@@ -321,7 +322,7 @@ public class Sacrum_GameManager : MonoBehaviour
         {
 
 
-            insertionObj.SetActive(false);
+           // insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
@@ -335,10 +336,10 @@ public class Sacrum_GameManager : MonoBehaviour
     }
     private void ligamentsButtonClickReset()
     {
-        inserAttch = true;
-        onInsertionsButtonClick();
-        isAllInsertionsSelected = true;
-        selectAllInsertions();
+        //inserAttch = true;
+       // onInsertionsButtonClick();
+       // isAllInsertionsSelected = true;
+        //selectAllInsertions();
 
         origAttach = true;
         onOriginsButtonClick();
@@ -355,7 +356,7 @@ public class Sacrum_GameManager : MonoBehaviour
         if (ligamentAttach == false)
         {
             ligamentsButtonClickReset();
-            insertionObj.SetActive(false);
+            //insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(false);
             ligamentObj.SetActive(true);
@@ -370,7 +371,7 @@ public class Sacrum_GameManager : MonoBehaviour
         {
 
 
-            insertionObj.SetActive(false);
+            //insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
@@ -386,10 +387,10 @@ public class Sacrum_GameManager : MonoBehaviour
 
     private void featureButtonClickReset()
     {
-        inserAttch = true;
-        onInsertionsButtonClick();
-        isAllInsertionsSelected = true;
-        selectAllInsertions();
+        //inserAttch = true;
+        //onInsertionsButtonClick();
+        //isAllInsertionsSelected = true;
+        //selectAllInsertions();
 
         origAttach = true;
         onOriginsButtonClick();
@@ -407,7 +408,7 @@ public class Sacrum_GameManager : MonoBehaviour
         if (featureAttach == false)
         {
             featureButtonClickReset();
-            insertionObj.SetActive(false);
+           // insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(false);
             ligamentObj.SetActive(false);
@@ -422,7 +423,7 @@ public class Sacrum_GameManager : MonoBehaviour
         {
 
 
-            insertionObj.SetActive(false);
+           // insertionObj.SetActive(false);
             originObj.SetActive(false);
             DefaultObj.SetActive(true);
             ligamentObj.SetActive(false);
