@@ -126,7 +126,7 @@ public class UIManager : MonoBehaviour
         sacrumBone.SetActive(false);
 
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         //zoneCplat.SetActive(true);
 
         mainUI.SetActive(false);
@@ -153,7 +153,7 @@ public class UIManager : MonoBehaviour
 
 
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         //zoneCplat.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
@@ -178,7 +178,7 @@ public class UIManager : MonoBehaviour
         sacrumBone.SetActive(false);
 
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
 
         mainUI.SetActive(false);
@@ -207,7 +207,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
@@ -234,7 +234,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
@@ -259,7 +259,7 @@ public class UIManager : MonoBehaviour
         sacrumBone.SetActive(false);
 
 
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
 
@@ -289,7 +289,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
@@ -318,7 +318,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
@@ -345,7 +345,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
@@ -372,7 +372,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
@@ -399,7 +399,7 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(false);
         ComingSoonPanel.SetActive(false);
         //zoneAPlat.SetActive(true);
-        zoneBplat.SetActive(true);
+        //zoneBplat.SetActive(true);
         // zoneCplat.SetActive(true);
     }
 
